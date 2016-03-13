@@ -11,10 +11,11 @@ Sistem se razvija da bi olakšao organizaciju kako pismenih ispita na nekom faku
 Korisnici sistema su i studenti i sami djelatnici ustanove koja sprovodi testiranje.
 Cilj je da se studentima/učenicima obezbjedi pregled detalja vezanih za ispitni rok koji su od znacaja za same studente. Sa druge strane, djelatnici ustanove koji su zaduženi za organizaciju ispitnog roka (testiranja) imaju mogučnost da uz pomoć ove aplikacije pronađu zadovoljavajući vremenski raspored ispita i raspored studenata po salama u kojim se održava ispit/testiranje. Takođe, djelatnici ustanove (npr. studentska služba fakulteta) imaju mogućnost da u slučaju eventualnih promjena obavještavaju i studente i ostalo osoblje fakulteta o istim.
 
+
 ## Procesi
 
 Djelatnik ustanove unosi podatke o ispitu (maksimalan broj učesnika koji mogu izaći na ispit/testiranje, način rasporeda studenata, željeni datum i vrijeme održavanja  itd.). Sistem onda na osnovu raspoloživih informacija daje optimalnu raspodjelu studenata ukoliko je to uopšte moguće, dok u suprotnom predlaže nekoliko alternativnih mogučnosti (drugi datum ili druga satnica). Kada djelatnik nađe zadovoljavajući termin i raspored podaci se spašavaju i svi korisnici sistema imaju mogućnost da vide ove izmjene (internet).
-
+Svi korisnici imaju pristup informacijama o trenutnoj temperaturi unutar prostorija za polaganje ispita, te u zavisnosti od iste, djelatnici ustanove mogu proslijediti podatke osoblju zaduženo za regulaciju temperature, koje će nadalje uključiti grijanje prostorija, odnosno klima uređaj za hlađenje, u zavisnosti od potreba. Mjerenje temperature ćemo obezbijediti pomoću eksternog uređaja; za potrebnu funkcionalnost zadate aplikacije koristit ćemo Raspberry Pi ili Arduino (zavisno od dostupnosti uređaja) te očitane podatke spasiti u bazu podataka, iz koje će korisnici čitati informacije o datoj temperaturi u prostoriji.
 ## Funkcionalnosti
 
 - Mogućnost organizacije ispita
@@ -24,5 +25,7 @@ Djelatnik ustanove unosi podatke o ispitu (maksimalan broj učesnika koji mogu i
 - Mogućnost unosa podataka o osobama koje su zadužene za samo sprovođenje ispita (asistenti, profesori)
 - Dodjeljivanje prioriteta predmetima, semestrima, godinama studija i slično
 - Odabir načina raspodjele studenata u skladu sa željenim novoom sigurnosti da ne bi došlo do neželjenih radnji kao što su prepisivanje  i/ili korištenje nedozvoljenih sredstava
+- Praćenje trenutne temperature u salama i laboratorijama gdje se održavaju ispiti, kako bi studenti imali mogućnost rada
+u optimalnim okolnostima
 
 
