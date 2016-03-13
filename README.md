@@ -1,6 +1,5 @@
 ﻿#### Tema: Raspored ispita u salama i laboratorijama
-# Tim: **LD1076**
-<b>Članovi tima:</b> 
+**Članovi tima:**
 1. Vedad Mulić
 2. Edin Begić
 3. Amer Šurković
