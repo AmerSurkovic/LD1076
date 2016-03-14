@@ -35,7 +35,6 @@ u optimalnim okolnostima
 Akteri datog sistema su:
  - Studenti:
    Studenti imaju pristup informaciji o tome koje ispite polažu te u kojim salama se ti ispiti odvijaju.
-
  - Administrativno osoblje (npr. studentska služba)
    Administrator sistema ima mogućnost registracije ispita te postavljanja restrikcija na same ispite.
    
