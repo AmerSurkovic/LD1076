@@ -16,7 +16,13 @@ Cilj je da se studentima/učenicima obezbjedi pregled detalja vezanih za ispitni
 
 Djelatnik ustanove unosi podatke o ispitu (maksimalan broj učesnika koji mogu izaći na ispit/testiranje, način rasporeda studenata, željeni datum i vrijeme održavanja  itd.). Sistem onda na osnovu raspoloživih informacija daje optimalnu raspodjelu studenata ukoliko je to uopšte moguće, dok u suprotnom predlaže nekoliko alternativnih mogučnosti (drugi datum ili druga satnica). Kada djelatnik nađe zadovoljavajući termin i raspored podaci se spašavaju i svi korisnici sistema imaju mogućnost da vide ove izmjene (internet).
 
+Jedna od mogućih izmjena koje djelatnik ustanove može da obavi jeste otkazivanje ispita koji je već prijavljen u sistemu. Otkazivanje ispita se vrši isključivo 24 sata prije zakazanog termina održavanja ispita budući da oslobađanje sale u kojoj je otkazani ispit trebao biti održan može dati novo optimalno rješenje rasporeda studenata.
+Djelatnik ustanove ili administrator posjeduje mogućnost registracije asistenata za poziciju dežurstva po kriteriju da asistent
+ne smije biti dežurni na predmetu na kojem je član nastavnog ansambla.
+
 Svi korisnici imaju pristup informacijama o trenutnoj temperaturi unutar prostorija za polaganje ispita, te u zavisnosti od iste, djelatnici ustanove mogu proslijediti podatke osoblju zaduženo za regulaciju temperature, koje će nadalje uključiti grijanje prostorija, odnosno klima uređaj za hlađenje, u zavisnosti od potreba. Mjerenje temperature ćemo obezbijediti pomoću eksternog uređaja; za potrebnu funkcionalnost zadate aplikacije koristit ćemo Raspberry Pi ili Arduino (zavisno od dostupnosti uređaja) te očitane podatke spasiti u bazu podataka, iz koje će korisnici čitati informacije o datoj temperaturi u prostoriji.
+
+
 
 ## Funkcionalnosti
 
