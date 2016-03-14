@@ -33,8 +33,7 @@ Svi korisnici imaju pristup informacijama o trenutnoj temperaturi unutar prostor
 - Mogućnost unosa podataka o osobama koje su zadužene za samo sprovođenje ispita (asistenti, profesori)
 - Dodjeljivanje prioriteta predmetima, semestrima, godinama studija i slično
 - Odabir načina raspodjele studenata u skladu sa željenim novoom sigurnosti da ne bi došlo do neželjenih radnji kao što su prepisivanje  i/ili korištenje nedozvoljenih sredstava
-- Praćenje trenutne temperature u salama i laboratorijama gdje se održavaju ispiti, kako bi studenti imali mogućnost rada
-u optimalnim okolnostima
+- Praćenje trenutne temperature u salama i laboratorijama gdje se održavaju ispiti, kako bi studenti imali mogućnost rada u optimalnim okolnostima
 
 ## Akteri
 
