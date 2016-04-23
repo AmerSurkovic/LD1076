@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="f4b150ce-e838-4500-abbd-962335bcd9c0"
-    Publisher="CN=Edin Begic"
+    Name="2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d"
+    Publisher="CN=edinb"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="f4b150ce-e838-4500-abbd-962335bcd9c0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>RasporedIspitaPoSalama</DisplayName>
-    <PublisherDisplayName>Edin Begic</PublisherDisplayName>
+    <PublisherDisplayName>edinb</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
