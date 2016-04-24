@@ -3,7 +3,7 @@ SOLID PRINCIPI
 1.Princip pojedinaène odgovornosti
 -Analizom sistema smo uoèili da su poslovi dobro rasporeðeni meðu klasama 
  te smo ustanovili da ne postoji klasa koja je optereæena poslovima na naèin
- da narušava princip pojedinaène odgovornsoti. 
+ da narušava princip pojedinaène odgovornsoti.   
 
 2.Otvoreno zatvoren princip
 -U dijagramu klasa smo koristili interfejs za komunikaciju sa eksternim ureðajem
