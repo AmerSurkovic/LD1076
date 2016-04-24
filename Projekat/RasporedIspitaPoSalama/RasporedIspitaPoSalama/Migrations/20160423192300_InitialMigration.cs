@@ -15,7 +15,12 @@ namespace RasporedIspitaPoSalamaMigrations
                 {
                     predmetID = table.Column(type: "INTEGER", nullable: false),
                        // .Annotation("Sqlite:Autoincrement", true),
-                    naziv = table.Column(type: "TEXT", nullable: true)
+                    naziv = table.Column(type: "TEXT", nullable: true),
+                    godina = table.Column(type: "INTEGER", nullable: false),
+                    semestar = table.Column(type: "INTEGER", nullable: false),
+                    ects = table.Column(type: "INTEGER", nullable: true),
+                    brojUpisanihStudenata = table.Column(type: "INTEGER", nullable: true)
+
                 },
                 constraints: table =>
                 {

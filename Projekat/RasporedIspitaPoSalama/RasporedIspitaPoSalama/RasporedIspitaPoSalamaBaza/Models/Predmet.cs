@@ -12,6 +12,11 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int predmetID { get; set; }
         public string naziv { get; set; }
+        public int godina { get; set; }
+        public int semestar { get; set; }
+        public int ects { get; set; }
+        public int brojUpisanihStudenata { get; set; }
+      
 
     }
 }

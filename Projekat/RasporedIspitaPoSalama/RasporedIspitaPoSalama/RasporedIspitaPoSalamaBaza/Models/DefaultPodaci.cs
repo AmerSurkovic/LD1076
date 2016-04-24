@@ -24,5 +24,22 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
                 );
                 context.SaveChanges();
             }
+            if(!context.Predmeti.Any())
+            {
+                context.Predmeti.AddRange(
+                new Predmet()
+                {
+                    predmetID = 1,
+                    naziv = "IM2",
+                    ects = 6,
+                    brojUpisanihStudenata = 10000,
+                    godina = 1,
+                    semestar = 2,              
+
+                }
+                );
+
+                context.SaveChanges();
+            }
         }
     }}

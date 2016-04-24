@@ -21,6 +21,14 @@ namespace RasporedIspitaPoSalamaMigrations
 
                     b.Property<string>("naziv");
 
+                    b.Property<int>("godina");
+
+                    b.Property<string>("semestar");
+
+                    b.Property<string>("ects");
+
+                    b.Property<string>("brojPrijavljenihStudenata");
+
                     b.Key("predmetID");
                 });
 
