@@ -1,0 +1,28 @@
+SOLID PRINCIPI
+
+1.Princip pojedinaène odgovornosti
+-Analizom sistema smo uoèili da su poslovi dobro rasporeðeni meðu klasama 
+ te smo ustanovili da ne postoji klasa koja je optereæena poslovima na naèin
+ da narušava princip pojedinaène odgovornsoti. 
+
+2.Otvoreno zatvoren princip
+-U dijagramu klasa smo koristili interfejs za komunikaciju sa eksternim ureðajem
+ kao i za komunikaciju sa bazom podataka. Takoðer, koristili smo apstraktne klase
+ Osoba i Testiranje. Sve navedeno ide u prilog otvoreno zatvorenom principu. 
+ Nakon ponovne analize dijagrama klasa nismo ustanovili znaèajno narušavanje 
+ ovog principa pa zakljuèujemo da je isti zadovoljen.
+
+3.Liskov princip zamjene
+-Nakon analize nasljeðivanja koja smo koristili u sistemu, zakljuèili smo da nije
+ narušen Liskov princip zamjene jer nadklase sadrže one atribute i metode koje su 
+ zajednièke za sve postojeæe podklase ali i za sve podklase koje bi se mogle dodati.
+
+4.Princip inverzije ovisnosti
+-Ovaj princip nalaže sljedeæe: 
+ Ne treba ovisiti od konkretnih klasa. Prilikom nasljeðivanja treba razmotriti 
+ sluèaj da je osnovna klasa apstraktna.
+ Mi smo ovaj princip ispoštovali jer su nadklase u nasljeðivanju apstraktne.
+
+5.Princip izoliranja interfejsa
+-Nije teško uoèiti da je ovaj princip ispoštovan s obzirom na mali broj metoda 
+ u interfejsima a i zbog èinjenice da se radi o relativno malom sistemu.
