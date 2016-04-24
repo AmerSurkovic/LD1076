@@ -67,6 +67,19 @@ namespace RasporedIspitaPoSalamaMigrations
                         referencedTable: "Predmet",
                         referencedColumn: "predmetID");
                 });
+            migration.CreateTable(
+                name: "Ispit",
+                columns: table => new
+                {
+                    ispitID = table.Column(type: "INTEGER", nullable: false),
+                    // .Annotation("Sqlite:Autoincrement", true),
+                    vrijemeIspita = table.Column(type: "TEXT", nullable: false),
+                    brojPrijavljenih = table.Column(type: "INTEGER", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ispit", x => x.ispitID);
+                });
         }
 
         public override void Down(MigrationBuilder migration)
@@ -74,6 +87,7 @@ namespace RasporedIspitaPoSalamaMigrations
             migration.DropTable("Termin");
             migration.DropTable("Sala");
             migration.DropTable("Predmet");
+            migration.DropTable("Ispit");
         }
     }
 }

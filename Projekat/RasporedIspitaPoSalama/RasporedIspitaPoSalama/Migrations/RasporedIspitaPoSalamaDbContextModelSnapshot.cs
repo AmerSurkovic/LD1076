@@ -76,6 +76,19 @@ namespace RasporedIspitaPoSalamaMigrations
                         .InverseCollection()
                         .ForeignKey("predmetpredmetID");
                 });
+
+            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Ispit", b =>
+            {
+                b.Property<int>("IspitID")
+                    .ValueGeneratedOnAdd();
+
+                b.Property<int>("brojPrijavljenih");
+
+                b.Property<DateTime>("vrijemeIspita");
+
+                b.Key("IspitID");
+            });
+
         }
     }
 }

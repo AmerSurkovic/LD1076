@@ -41,5 +41,17 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
 
                 context.SaveChanges();
             }
+            if(!context.Ispiti.Any())
+            {
+                context.Ispiti.AddRange(
+                new Ispit()
+                {
+                    ispitID = 1,
+                    brojPrijavljenih = 10000,
+                    vrijemeIspita = DateTime.Now,
+                }
+                );
+            }
         }
-    }}
+    }
+}

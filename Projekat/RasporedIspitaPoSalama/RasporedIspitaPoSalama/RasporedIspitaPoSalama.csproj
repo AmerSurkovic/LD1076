@@ -108,6 +108,7 @@
     <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RasporedIspitaPoSalamaBaza\Models\DefaultPodaci.cs" />
+    <Compile Include="RasporedIspitaPoSalamaBaza\Models\Ispit.cs" />
     <Compile Include="RasporedIspitaPoSalamaBaza\Models\Predmet.cs" />
     <Compile Include="RasporedIspitaPoSalamaBaza\Models\Prostorija.cs" />
     <Compile Include="RasporedIspitaPoSalamaBaza\Models\RasporedIspitaPoSalamaDbContext.cs" />

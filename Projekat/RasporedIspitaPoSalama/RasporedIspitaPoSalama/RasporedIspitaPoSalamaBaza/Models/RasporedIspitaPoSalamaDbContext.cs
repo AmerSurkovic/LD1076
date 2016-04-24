@@ -15,6 +15,7 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
         public DbSet<Sala> Sale { get; set; }
         public DbSet<Predmet> Predmeti { get; set; }
         public DbSet<Termin> Termini { get; set; }
+        public DbSet<Ispit> Ispiti { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string databaseFilePath = "RasporedIspitaPoSalama.db";
