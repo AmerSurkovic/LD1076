@@ -1,5 +1,5 @@
 ﻿using Microsoft.Data.Entity;
-using RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models;
+using RasporedIspitaPoSalama.SRSPS.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,7 +39,8 @@ namespace RasporedIspitaPoSalama
             {
                 db.Database.ApplyMigrations();
                 DefaultPodaci.Initialize(db);
-            }
+            }
+
         }
 
         private void Initialize(RasporedIspitaPoSalamaDbContext db)
@@ -87,7 +88,7 @@ namespace RasporedIspitaPoSalama
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(SRSPS.Views.Pocetna), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

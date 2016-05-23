@@ -1,1 +1,1 @@
-C:\Users\edinb\Desktop\C#\RasporedIspitaPoSalama\RasporedIspitaPoSalama\RasporedIspitaPoSalama.csproj;x86
+C:\Users\Vedad\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\RasporedIspitaPoSalama.csproj;x86
