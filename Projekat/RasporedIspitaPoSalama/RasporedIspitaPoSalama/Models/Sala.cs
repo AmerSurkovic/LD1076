@@ -5,13 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RasporedIspitaPoSalama.SRSPS.Models
+namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
 {
-    public class Ispit
+    public class Sala : Prostorija
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ispitID { get; set; }
+        public int salaID { get; set; }
+        public int kapacitet { get; set; }
+        public float trenutnaTemperatura { get; set; }
+        public List<Termin> termini { get; set; }
         public int brojPrijavljenih { get; set; }
-        public DateTime vrijemeIspita { get; set; }
     }
 }

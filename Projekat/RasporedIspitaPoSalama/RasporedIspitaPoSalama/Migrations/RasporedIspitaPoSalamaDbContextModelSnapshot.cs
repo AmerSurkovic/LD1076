@@ -2,7 +2,7 @@ using System;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Metadata;
 using Microsoft.Data.Entity.Migrations.Infrastructure;
-using RasporedIspitaPoSalama.SRSPS.Models;
+using RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models;
 
 namespace RasporedIspitaPoSalamaMigrations
 {

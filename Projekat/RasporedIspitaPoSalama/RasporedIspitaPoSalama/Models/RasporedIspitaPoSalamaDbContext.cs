@@ -8,7 +8,7 @@ using Microsoft.Data.Sqlite;
 using System.IO;
 using Windows.Storage;
 
-namespace RasporedIspitaPoSalama.SRSPS.Models
+namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
 {
     class RasporedIspitaPoSalamaDbContext : DbContext
     {

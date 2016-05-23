@@ -8,8 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="100" Margin="175,354,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="104,454,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <Pivot Title="Pivot">
+            <PivotItem Header="PivotItem 0">
+                <Grid/>
+            </PivotItem>
+            <PivotItem Header="PivotItem 1">
+                <Grid/>
+            </PivotItem>
+        </Pivot>
 
     </Grid>
 </Page>

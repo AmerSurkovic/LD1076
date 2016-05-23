@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RasporedIspitaPoSalama.SRSPS.Models
+namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
 {
     public class Predmet
     {
