@@ -107,13 +107,16 @@
     </Compile>
     <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\DefaultPodaci.cs" />
-    <Compile Include="Models\Ispit.cs" />
-    <Compile Include="Models\Predmet.cs" />
-    <Compile Include="Models\Prostorija.cs" />
-    <Compile Include="Models\RasporedIspitaPoSalamaDbContext.cs" />
-    <Compile Include="Models\Sala.cs" />
-    <Compile Include="Models\Termin.cs" />
+    <Compile Include="SRSPS\Models\DefaultPodaci.cs" />
+    <Compile Include="SRSPS\Models\Ispit.cs" />
+    <Compile Include="SRSPS\Models\Predmet.cs" />
+    <Compile Include="SRSPS\Models\Prostorija.cs" />
+    <Compile Include="SRSPS\Models\RasporedIspitaPoSalamaDbContext.cs" />
+    <Compile Include="SRSPS\Models\Sala.cs" />
+    <Compile Include="SRSPS\Models\Termin.cs" />
+    <Compile Include="SRSPS\Views\Pocetna.xaml.cs">
+      <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -140,10 +143,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SRSPS\Views\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RasporedIspitaPoSalamaBaza\" />
-    <Folder Include="Views\" />
+    <Folder Include="SRSPS\ViewModels\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

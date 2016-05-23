@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>F5D43D15DBDDA061E86B93FC56E4FE50930A989DA2F8F86E45F9AD83EC100813</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_1.0.0.0_x86__8r5tweqkzbs6t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_8r5tweqkzbs6t!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-23T10:22:52.376</Modified>
+      <Modified>2016-05-23T13:30:03.103</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
       <PackagePath>entrypoint\RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-23T10:22:49.567</Modified>
+      <Modified>2016-05-23T13:29:56.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\edinb\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -530,11 +530,11 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
@@ -542,36 +542,36 @@
       <PackagePath>EntityFramework.Commands.xml</PackagePath>
       <Modified>2015-07-21T15:24:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T06:46:52.000</Modified>
@@ -580,21 +580,21 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
       <PackagePath>RasporedIspitaPoSalama.xr.xml</PackagePath>
-      <Modified>2016-05-23T10:21:01.511</Modified>
+      <Modified>2016-05-23T13:29:22.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-04-07T19:20:03.006</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-23T10:22:51.912</Modified>
+      <Modified>2016-05-23T13:30:01.703</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\edinb\Desktop\LD1076-58ba44547e8e8a6ac72851923bd1b5ce7aef1e4c\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
       <PackagePath>RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-23T10:22:52.373</Modified>
+      <Modified>2016-05-23T13:30:03.083</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
