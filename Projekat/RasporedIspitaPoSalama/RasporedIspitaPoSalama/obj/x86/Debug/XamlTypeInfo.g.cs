@@ -133,12 +133,12 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[3];
-            _typeNameTable[0] = "RasporedIspitaPoSalama.MainPage";
+            _typeNameTable[0] = "RasporedIspitaPoSalama.Test.Views.Prijava_administratora";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
 
             _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::RasporedIspitaPoSalama.MainPage);
+            _typeTable[0] = typeof(global::RasporedIspitaPoSalama.Test.Views.Prijava_administratora);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
@@ -175,7 +175,7 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::RasporedIspitaPoSalama.MainPage(); }
+        private object Activate_0_Prijava_administratora() { return new global::RasporedIspitaPoSalama.Test.Views.Prijava_administratora(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +187,9 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  RasporedIspitaPoSalama.MainPage
+            case 0:   //  RasporedIspitaPoSalama.Test.Views.Prijava_administratora
                 userType = new global::RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_Prijava_administratora;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
