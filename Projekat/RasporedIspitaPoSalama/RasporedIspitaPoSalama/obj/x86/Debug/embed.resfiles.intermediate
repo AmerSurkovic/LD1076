@@ -1,2 +1,7 @@
 App.xbf
+<<<<<<< HEAD
 Test\Views\Prijava administratora.xbf
+=======
+MainPage.xbf
+SRSPS\Views\Pocetna.xbf
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a

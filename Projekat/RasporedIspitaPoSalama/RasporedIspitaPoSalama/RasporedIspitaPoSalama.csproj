@@ -104,6 +104,7 @@
     <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
     <Compile Include="Test\Models\Administrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Test\Models\DefaultPodaci.cs" />
     <Compile Include="Test\Models\Ispit.cs" />
     <Compile Include="Test\Models\Predmet.cs" />
@@ -114,6 +115,17 @@
     <Compile Include="Test\ViewModel\AdministratorViewModel.cs" />
     <Compile Include="Test\Views\Prijava administratora.xaml.cs">
       <DependentUpon>Prijava administratora.xaml</DependentUpon>
+=======
+    <Compile Include="SRSPS\Models\DefaultPodaci.cs" />
+    <Compile Include="SRSPS\Models\Ispit.cs" />
+    <Compile Include="SRSPS\Models\Predmet.cs" />
+    <Compile Include="SRSPS\Models\Prostorija.cs" />
+    <Compile Include="SRSPS\Models\RasporedIspitaPoSalamaDbContext.cs" />
+    <Compile Include="SRSPS\Models\Sala.cs" />
+    <Compile Include="SRSPS\Models\Termin.cs" />
+    <Compile Include="SRSPS\Views\Pocetna.xaml.cs">
+      <DependentUpon>Pocetna.xaml</DependentUpon>
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -141,9 +153,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SRSPS\Views\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RasporedIspitaPoSalamaBaza\" />
+<<<<<<< HEAD
+=======
+    <Folder Include="SRSPS\ViewModels\" />
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

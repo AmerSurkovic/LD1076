@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 WinMetadata\Windows.winmd
 EntityFramework.Commands.dll
 EntityFramework.Commands.xml
+=======
+ApplicationInsights.config
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -10,3 +14,6 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 RasporedIspitaPoSalama.xr.xml
 Properties\Default.rd.xml
+WinMetadata\Windows.winmd
+EntityFramework.Commands.dll
+EntityFramework.Commands.xml

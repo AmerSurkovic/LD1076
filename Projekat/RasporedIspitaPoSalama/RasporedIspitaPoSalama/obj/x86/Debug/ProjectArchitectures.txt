@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\RasporedIspitaPoSalama.csproj;x86
+=======
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\RasporedIspitaPoSalama.csproj;x86
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a

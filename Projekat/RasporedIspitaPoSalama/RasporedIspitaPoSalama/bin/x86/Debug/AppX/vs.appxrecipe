@@ -9,8 +9,13 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d</PackageIdentityName>
+<<<<<<< HEAD
     <IntermediateOutputPath>C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>BB28C04DFDF86A08680810CA39AB9F6815A0DDB3AA4EE042C2494FE3711FD00A</RegisteredManifestChecksum>
+=======
+    <IntermediateOutputPath>C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>F5D43D15DBDDA061E86B93FC56E4FE50930A989DA2F8F86E45F9AD83EC100813</RegisteredManifestChecksum>
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     <RegisteredPackageMoniker>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_1.0.0.0_x86__8r5tweqkzbs6t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_8r5tweqkzbs6t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d</RegisteredPackageID>
@@ -19,6 +24,7 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <AppXManifest Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -29,6 +35,18 @@
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
       <PackagePath>entrypoint\RasporedIspitaPoSalama.exe</PackagePath>
       <Modified>2016-05-25T14:37:24.931</Modified>
+=======
+    <AppXManifest Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-23T13:30:03.103</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
+      <PackagePath>entrypoint\RasporedIspitaPoSalama.exe</PackagePath>
+      <Modified>2016-05-23T13:29:56.589</Modified>
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amer\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -530,7 +548,15 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-23T06:11:12.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\ApplicationInsights.config">
+      <PackagePath>ApplicationInsights.config</PackagePath>
+      <Modified>2016-04-24T06:46:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-04-24T14:38:00.744</Modified>
     </AppxPackagedFile>
@@ -538,36 +564,64 @@
       <PackagePath>EntityFramework.Commands.xml</PackagePath>
       <Modified>2015-07-22T00:24:16.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-04-24T14:37:56.923</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\SplashScreen.scale-200.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\SplashScreen.scale-200.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.021</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square150x150Logo.scale-200.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square150x150Logo.scale-200.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.120</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.scale-200.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.scale-200.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.223</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.334</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\StoreLogo.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\StoreLogo.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.425</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Wide310x150Logo.scale-200.png">
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Wide310x150Logo.scale-200.png">
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-04-24T14:37:58.542</Modified>
@@ -576,14 +630,21 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-22T02:12:58.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
       <PackagePath>RasporedIspitaPoSalama.xr.xml</PackagePath>
       <Modified>2016-05-25T14:31:21.408</Modified>
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
+      <PackagePath>RasporedIspitaPoSalama.xr.xml</PackagePath>
+      <Modified>2016-05-23T13:29:22.592</Modified>
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-05-22T16:51:43.014</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2016-05-25T14:31:29.003</Modified>
@@ -591,6 +652,15 @@
     <AppxPackagedFile Include="C:\Users\Amer\Documents\GitHub\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
       <PackagePath>RasporedIspitaPoSalama.exe</PackagePath>
       <Modified>2016-05-25T14:37:29.028</Modified>
+=======
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-05-23T13:30:01.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
+      <PackagePath>RasporedIspitaPoSalama.exe</PackagePath>
+      <Modified>2016-05-23T13:30:03.083</Modified>
+>>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
