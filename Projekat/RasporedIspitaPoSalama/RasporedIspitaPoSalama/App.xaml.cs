@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.Entity;
-using RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models;
-using RasporedIspitaPoSalama.Test.Views;
+using RasporedIspitaPoSalama.SRSPS.Models;
+using RasporedIspitaPoSalama.SRSPS.Views;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -89,11 +89,8 @@ namespace RasporedIspitaPoSalama
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-<<<<<<< HEAD
                     rootFrame.Navigate(typeof(Prijava_administratora), e.Arguments);
-=======
                     rootFrame.Navigate(typeof(SRSPS.Views.Pocetna), e.Arguments);
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

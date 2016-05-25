@@ -1,5 +1,5 @@
-﻿using RasporedIspitaPoSalama.Test.Helper;
-using RasporedIspitaPoSalama.Test.Models;
+﻿using RasporedIspitaPoSalama.SRSPS.Helper;
+using RasporedIspitaPoSalama.SRSPS.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
-namespace RasporedIspitaPoSalama.Test.ViewModel
+namespace RasporedIspitaPoSalama.SRSPS.ViewModels
 {
     class AdministratorViewModel : INotifyPropertyChanged
     {   

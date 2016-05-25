@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace RasporedIspitaPoSalama.SRSPS.Models
 {
-    public abstract class Prostorija
+    public class Administrator
     {
-        public float povrsina { get; set; }
-        public string naziv { get; set; }
+        public string adminID { get; set; }
+        public string RfidKartica { get; set; }
+        public Administrator() { }
+
+
     }
 }

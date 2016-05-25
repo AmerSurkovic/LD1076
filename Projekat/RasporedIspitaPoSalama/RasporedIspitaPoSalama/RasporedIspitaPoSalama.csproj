@@ -96,26 +96,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test\Helper\Rfid.cs" />
+    <Compile Include="SRSPS\Helper\Rfid.cs" />
+    <Compile Include="SRSPS\Models\Administrator.cs" />
+    <Compile Include="SRSPS\ViewModels\AdministratorViewModel.cs" />
+    <Compile Include="SRSPS\Views\Prijava administratora.xaml.cs">
+      <DependentUpon>Prijava administratora.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\20160423192300_InitialMigration.cs" />
     <Compile Include="Migrations\20160423192300_InitialMigration.designer.cs">
       <DependentUpon>20160423192300_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
-    <Compile Include="Test\Models\Administrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="Test\Models\DefaultPodaci.cs" />
-    <Compile Include="Test\Models\Ispit.cs" />
-    <Compile Include="Test\Models\Predmet.cs" />
-    <Compile Include="Test\Models\Prostorija.cs" />
-    <Compile Include="Test\Models\RasporedIspitaPoSalamaDbContext.cs" />
-    <Compile Include="Test\Models\Sala.cs" />
-    <Compile Include="Test\Models\Termin.cs" />
-    <Compile Include="Test\ViewModel\AdministratorViewModel.cs" />
-    <Compile Include="Test\Views\Prijava administratora.xaml.cs">
-      <DependentUpon>Prijava administratora.xaml</DependentUpon>
-=======
     <Compile Include="SRSPS\Models\DefaultPodaci.cs" />
     <Compile Include="SRSPS\Models\Ispit.cs" />
     <Compile Include="SRSPS\Models\Predmet.cs" />
@@ -125,7 +117,6 @@
     <Compile Include="SRSPS\Models\Termin.cs" />
     <Compile Include="SRSPS\Views\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +140,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Test\Views\Prijava administratora.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="SRSPS\Views\Prijava administratora.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SRSPS\Views\Pocetna.xaml">
       <SubType>Designer</SubType>
@@ -160,10 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RasporedIspitaPoSalamaBaza\" />
-<<<<<<< HEAD
-=======
-    <Folder Include="SRSPS\ViewModels\" />
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

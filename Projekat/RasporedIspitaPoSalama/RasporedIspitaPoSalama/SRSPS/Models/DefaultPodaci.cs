@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models
+namespace RasporedIspitaPoSalama.SRSPS.Models
 {
     class DefaultPodaci
     {

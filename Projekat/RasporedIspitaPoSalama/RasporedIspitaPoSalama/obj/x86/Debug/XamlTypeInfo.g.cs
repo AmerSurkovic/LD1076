@@ -132,24 +132,14 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
 
         private void InitTypeTables()
         {
-<<<<<<< HEAD
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "RasporedIspitaPoSalama.Test.Views.Prijava_administratora";
-=======
             _typeNameTable = new string[4];
-            _typeNameTable[0] = "RasporedIspitaPoSalama.MainPage";
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
+            _typeNameTable[0] = "RasporedIspitaPoSalama.SRSPS.Views.Prijava_administratora";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "RasporedIspitaPoSalama.SRSPS.Views.Pocetna";
 
-<<<<<<< HEAD
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::RasporedIspitaPoSalama.Test.Views.Prijava_administratora);
-=======
             _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::RasporedIspitaPoSalama.MainPage);
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
+            _typeTable[0] = typeof(global::RasporedIspitaPoSalama.SRSPS.Views.Prijava_administratora);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::RasporedIspitaPoSalama.SRSPS.Views.Pocetna);
@@ -187,12 +177,8 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
             return -1;
         }
 
-<<<<<<< HEAD
-        private object Activate_0_Prijava_administratora() { return new global::RasporedIspitaPoSalama.Test.Views.Prijava_administratora(); }
-=======
-        private object Activate_0_MainPage() { return new global::RasporedIspitaPoSalama.MainPage(); }
+        private object Activate_0_Prijava_administratora() { return new global::RasporedIspitaPoSalama.SRSPS.Views.Prijava_administratora(); }
         private object Activate_3_Pocetna() { return new global::RasporedIspitaPoSalama.SRSPS.Views.Pocetna(); }
->>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -204,7 +190,7 @@ namespace RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  RasporedIspitaPoSalama.Test.Views.Prijava_administratora
+            case 0:   //  RasporedIspitaPoSalama.SRSPS.Views.Prijava_administratora
                 userType = new global::RasporedIspitaPoSalama.RasporedIspitaPoSalama_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_Prijava_administratora;
                 userType.SetIsLocalType();

@@ -899,3 +899,13 @@ C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\
 C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\ProjectArchitectures.txt
 >>>>>>> e9f13c270edc9acef053bbe51f68fe467c73739a
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\RasporedIspitaPoSalama.csprojResolveAssemblyReference.cache
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\Test\Views\Prijava administratora.g.i.cs
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\Test\Views\Prijava administratora.g.cs
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\Test\Views\Prijava administratora.xaml
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\Test\Views\Prijava administratora.xbf
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\SRSPS\Views\Prijava administratora.g.i.cs
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\SRSPS\Views\Prijava administratora.g.cs
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\SRSPS\Views\Prijava administratora.xaml
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\SRSPS\Views\Prijava administratora.xbf
+C:\github\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\SRSPS\Views\Prijava administratora.xbf
