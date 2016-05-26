@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B4164E3BBE438FEE9DC1B67535EFCF00D88015CBA47883F05729882126ADC6F9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6E3AE59C83675C390677D840709860A07659723D7611DA316E4C55C1C10DC927</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_1.0.0.0_x86__8r5tweqkzbs6t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d_8r5tweqkzbs6t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2e0ce4e7-0dfa-42a9-9e3c-b223dda9276d</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-26T01:25:16.226</Modified>
+      <Modified>2016-05-26T14:03:19.613</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
       <PackagePath>entrypoint\RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-26T01:25:15.197</Modified>
+      <Modified>2016-05-26T14:03:19.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +582,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
       <PackagePath>RasporedIspitaPoSalama.xr.xml</PackagePath>
-      <Modified>2016-05-26T00:46:24.405</Modified>
+      <Modified>2016-05-26T12:48:35.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-26T01:25:15.876</Modified>
+      <Modified>2016-05-26T12:48:37.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
       <PackagePath>RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-26T01:25:16.220</Modified>
+      <Modified>2016-05-26T14:03:19.609</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

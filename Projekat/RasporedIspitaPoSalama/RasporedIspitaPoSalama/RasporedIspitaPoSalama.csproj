@@ -102,6 +102,9 @@
     <Compile Include="SRSPS\Views\IspitniRok.xaml.cs">
       <DependentUpon>IspitniRok.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SRSPS\Views\PrijasnjiRokovi.xaml.cs">
+      <DependentUpon>PrijasnjiRokovi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SRSPS\Views\Prijava administratora.xaml.cs">
       <DependentUpon>Prijava administratora.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="SRSPS\Views\IspitniRok.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\PrijasnjiRokovi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

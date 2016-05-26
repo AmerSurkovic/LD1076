@@ -30,9 +30,9 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
         public Rfid()
         {
             //ucitavanje json konfiguracija radi laksih izmjena
-            rfidConfig = JsonValue.Parse(File.ReadAllText("RfidConfig.json")).GetObject();
+            //rfidConfig = JsonValue.Parse(File.ReadAllText("RfidConfig.json")).GetObject();
             //port bitan cesto ce se mijenjati ovisno o racunaru COM 1 - 4 najcesce a moze i vise
-            port = rfidConfig.GetNamedString("port");
+            port = "COM 7";// rfidConfig.GetNamedString("port");
         }
 
         public async void InitializeReader(Action<string> callback)
@@ -66,8 +66,8 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
         }
         private async void Listen(Action<string> callback)
         {
-            try
-            {
+
+            try{
                 if (serialDevice != null)
                 {
                     //cita iz streama

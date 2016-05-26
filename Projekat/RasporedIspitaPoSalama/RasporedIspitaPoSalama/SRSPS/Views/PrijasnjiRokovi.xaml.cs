@@ -20,32 +20,11 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    /// 
-    
-    public sealed partial class Sale : Page
+    public sealed partial class PrijasnjiRokovi : Page
     {
-
-        TextBlock tb;
-        public Sale()
+        public PrijasnjiRokovi()
         {
             this.InitializeComponent();
-        }
-
-        public Sale(TextBlock _tb)
-        {
-            this.InitializeComponent();
-            tb = _tb;
-            tb.Text = "Sale";
-            
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            TextBlock _tb = (TextBlock)e.Parameter;
-            tb = _tb;
-            tb.Text = "Sale";
-
         }
     }
 }

@@ -23,13 +23,22 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
     /// </summary>
     public sealed partial class Prijava_administratora : Page
     {
-      //  AdministratorViewModel administratorViewModel;
+        TextBlock tb;
+       AdministratorViewModel administratorViewModel;
         public Prijava_administratora()
         {
             this.InitializeComponent();
-          //  administratorViewModel = new AdministratorViewModel();
-          //  this.DataContext = administratorViewModel;
+            administratorViewModel = new AdministratorViewModel();
+            this.DataContext = administratorViewModel;
 
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            TextBlock _tb = (TextBlock)e.Parameter;
+            tb = _tb;
+            tb.Text = "Admin Login";
         }
     }
 }
