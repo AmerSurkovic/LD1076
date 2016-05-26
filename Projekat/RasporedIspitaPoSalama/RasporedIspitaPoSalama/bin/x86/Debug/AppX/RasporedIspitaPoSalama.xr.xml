@@ -10,18 +10,39 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="RasporedIspitaPoSalama.SRSPS.Views.IspitniRok" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -30,6 +51,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Name" />
+      <RootEvent Name="GotFocus" />
+      <RootEvent Name="LostFocus" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -39,12 +63,54 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="RasporedIspitaPoSalama.SRSPS.Views.Prijava_administratora" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetAlignLeftWithPanel" />
+      <RootMethod Name="SetAlignLeftWithPanel" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+      <RootMethod Name="GetAlignRightWithPanel" />
+      <RootMethod Name="SetAlignRightWithPanel" />
+      <RootMethod Name="GetLeftOf" />
+      <RootMethod Name="SetLeftOf" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="DisplayMode" />
+      <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="CompactPaneLength" />
+      <RootProperty Name="Pane" />
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Name" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="RasporedIspitaPoSalama.SRSPS.Views.Pocetna" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="RasporedIspitaPoSalama.SRSPS.Views.Sale" />
   </Roots.RootTypes>
 </Roots>

@@ -8,8 +8,54 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button1" Content="Pokreni" HorizontalAlignment="Left" Margin="46,302,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button2" Content="Prijavi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,302,0,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <RelativePanel Name="relativePanelHamburger" >
+            <Button Name="buttonHamburger" FontFamily="Segoe MDL2 Assets" FontSize="36" Content="&#xE700;" Click="buttonHamburger_Click" RelativePanel.AlignLeftWithPanel="True"/>
+            <Button Name="button_Back" FontFamily="Segoe MDL2 Assets" FontSize="36" Content="&#xE0C4;" Click="button_Back_Click" Visibility="Collapsed" RelativePanel.RightOf="buttonHamburger"/>
+            <TextBlock Name="tBlockStranica" Text="Pocetna" FontSize="36" FontFamily="Constantia" Margin="20,5,0,0" RelativePanel.RightOf="button_Back" FontWeight="Bold"/>
+            <Button Name="buttonSearch" FontFamily="Segoe MDL2 Assets" FontSize="36" Content="&#xE11A;" RelativePanel.AlignRightWithPanel="True"/>
+            <TextBox Name="tBoxSearch" Text="Search" Width="160" FontSize="30" GotFocus="tbSearch_GotFocus" LostFocus="tbSearch_LostFocus" RelativePanel.LeftOf="buttonSearch"/>
+        </RelativePanel>
+
+        <SplitView Name="splitViewPocetna" Grid.Row="1" MinWidth="30" DisplayMode="CompactOverlay" OpenPaneLength="250" CompactPaneLength="56">
+            <SplitView.Pane>
+                <ListBox Name="listBoxMeni" SelectionChanged="listBoxMeni_SelectionChanged">
+                    <ListBoxItem Name="listBoxItem_Home">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="tBlockIkona1" FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
+                            <TextBlock Name="tBlock1" FontSize="36" Text="Home" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="listBoxItem_drugi">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="tBlockIkona2" FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE909;" />
+                            <TextBlock Name="tBlock2" FontSize="36" Text="CBET" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="listBoxItem_treci">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="tBlockIkona3" FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE90F;" />
+                            <TextBlock Name="tBlock3" FontSize="36" Text="Popravka" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="listBoxItem_Admin">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="tBlockIkonaAdmin" FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE7EF;" />
+                            <TextBlock Name="tBlockAdmin" FontSize="36" Text="Admin Login" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+
+            <SplitView.Content>
+                <Frame Name="glavniFrame"/>
+            </SplitView.Content>
+
+        </SplitView>
 
     </Grid>
 </Page>

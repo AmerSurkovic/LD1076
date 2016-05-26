@@ -99,6 +99,9 @@
     <Compile Include="SRSPS\Helper\Rfid.cs" />
     <Compile Include="SRSPS\Models\Administrator.cs" />
     <Compile Include="SRSPS\ViewModels\AdministratorViewModel.cs" />
+    <Compile Include="SRSPS\Views\IspitniRok.xaml.cs">
+      <DependentUpon>IspitniRok.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SRSPS\Views\Prijava administratora.xaml.cs">
       <DependentUpon>Prijava administratora.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,9 @@
     <Compile Include="SRSPS\Views\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SRSPS\Views\Sale.xaml.cs">
+      <DependentUpon>Sale.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -126,6 +132,7 @@
     <None Include="RasporedIspitaPoSalama_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\sale.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -140,11 +147,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="SRSPS\Views\IspitniRok.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SRSPS\Views\Prijava administratora.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SRSPS\Views\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\Sale.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
