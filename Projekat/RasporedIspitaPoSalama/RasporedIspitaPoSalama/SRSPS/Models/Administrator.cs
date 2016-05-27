@@ -11,17 +11,16 @@ using System.Threading.Tasks;
 namespace RasporedIspitaPoSalama.SRSPS.Models
 {
     [DataContract]
-    public class Administrator : INotifyPropertyChanged
+    public class Administrator : Osoba, INotifyPropertyChanged
     {
-        string userName;
-        public string UserName { get { return userName; } set { userName = value; } }
-        string password;
-        public string Password { get { return password; } set { password = value; } }
+        public string UserName { get; set; }
+        public string Password { get; set; }
 
         private string rfidKartica;
         [DataMember]
         public string RfidKartica { get { return rfidKartica; } set { rfidKartica = Regex.Replace(value, "[^0-9a-zA-Z]+", ""); OnNotifyPropertyChanged("RfidKartica"); } }
 
+        public Administrator(string _ime, string _prezime, DateTime _datumRodjenja) : base(_ime,_prezime,_datumRodjenja) { }
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnNotifyPropertyChanged([CallerMemberName] string memberName = "")
         {

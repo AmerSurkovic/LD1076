@@ -23,13 +23,14 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
     
     public sealed partial class Pocetna : Page
     {
-        public String trenutnaStranica;
+      
         public Pocetna()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();         
+            tBlockStranica.Text = "Ispitni rok";
+            RasporedIspitaPoSalama.App.stekListBox.Push(1);
+            tBoxSearch.FontStyle = Windows.UI.Text.FontStyle.Italic;
             glavniFrame.Navigate(typeof(IspitniRok));
-            trenutnaStranica = "Ispitni rok";
-            tBlockStranica.Text = trenutnaStranica;
         }
 
         private void buttonHamburger_Click(object sender, RoutedEventArgs e)
@@ -57,38 +58,37 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
 
         private void listBoxMeni_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(listBoxItem_Admin.IsSelected)
-            {
-                tBlockStranica.Text = "Admin Login";
-                button_Back.Visibility = Visibility.Visible;
-               
-                glavniFrame.Navigate(typeof(Prijava_administratora), tBlockStranica);
-                RasporedIspitaPoSalama.App.stekListBox.Push(4);
 
+            if (listBoxItem_Home.IsSelected)
+            {
+                tBlockStranica.Text = "Ispitni Rok";
+                glavniFrame.Navigate(typeof(IspitniRok), tBlockStranica);
             }
+            
             else if(listBoxItem_drugi.IsSelected)
             {
                 tBlockStranica.Text = "Sale";
-                button_Back.Visibility = Visibility.Visible;
                 glavniFrame.Navigate(typeof(Sale), tBlockStranica);
-                RasporedIspitaPoSalama.App.stekListBox.Push(2);
-                
+                     
             }
-            else if(listBoxItem_Home.IsSelected)
-            { 
-                tBlockStranica.Text = "Ispitni Rok";
-                button_Back.Visibility = Visibility.Collapsed;
-                glavniFrame.Navigate(typeof(IspitniRok), tBlockStranica);
-                RasporedIspitaPoSalama.App.stekListBox.Push(1);
-            }
-            else if(listBoxItem_treci.IsSelected)
+            else if (listBoxItem_treci.IsSelected)
             {
-               
-                    tBlockStranica.Text = "Prijašnji ispiti";
-                    button_Back.Visibility = Visibility.Visible;
-                    glavniFrame.Navigate(typeof(PrijasnjiRokovi), tBlockStranica);
-                RasporedIspitaPoSalama.App.stekListBox.Push(3);
 
+                tBlockStranica.Text = tBlock3.Text;
+                glavniFrame.Navigate(typeof(PrijasnjiRokovi), tBlockStranica);
+
+            }
+            else if (listBoxItem_Admin.IsSelected)
+            {
+                tBlockStranica.Text = "Admin Login";
+                glavniFrame.Navigate(typeof(Prijava_administratora), tBlockStranica);
+
+
+            }
+            else
+            {
+                tBlockStranica.Text = "Pomoc";
+                glavniFrame.Navigate(typeof(PrijasnjiRokovi), tBlockStranica);
             }
         }
 
@@ -99,38 +99,33 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
                 if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 1)
                 {
                     tBlockStranica.Text = "Početna";
-                    listBoxItem_Home.IsSelected = true;
+                   // listBoxItem_Home.IsSelected = true;
                 }
                     
                 else if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 2)
                 {
                     tBlockStranica.Text = "Sale";
-                    listBoxItem_drugi.IsSelected = true;
+                    //listBoxItem_drugi.IsSelected = true;
                 }
                     
                 else if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 3)
                 {
                     tBlockStranica.Text = "Prijašnji ispiti";
-                    listBoxItem_treci.IsSelected = true;
+                    //listBoxItem_treci.IsSelected = true;
                 }
                     
                 else
                 {
                     tBlockStranica.Text = "Admin Login";
-                    listBoxItem_Admin.IsSelected=true;
+                    //listBoxItem_Admin.IsSelected=true;
                 }
                     
                 RasporedIspitaPoSalama.App.stekListBox.Pop();
+               
+
                 glavniFrame.GoBack();
             }
         }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-
-        }
-
 
     }
 }

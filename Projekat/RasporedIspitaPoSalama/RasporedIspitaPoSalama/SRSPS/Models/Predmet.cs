@@ -14,9 +14,26 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
         public string naziv { get; set; }
         public int godina { get; set; }
         public int semestar { get; set; }
-        public int ects { get; set; }
+        public float ects { get; set; }
         public int brojUpisanihStudenata { get; set; }
-      
 
+        public Predmet(int _predmetID, string _naziv, int _godina, int _semestar, float _ects, int _brojUpisanih)
+        {
+            predmetID = _predmetID;
+            naziv = _naziv;
+            godina = _godina;
+            semestar = _semestar;
+            ects = _ects;
+            brojUpisanihStudenata = _brojUpisanih;
+        }
+
+        public Predmet()
+        {
+        }
+
+        public override string ToString()
+        {
+            return naziv;
+        }
     }
 }

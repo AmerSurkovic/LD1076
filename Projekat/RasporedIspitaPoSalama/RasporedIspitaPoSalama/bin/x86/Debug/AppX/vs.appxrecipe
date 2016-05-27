@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-26T14:03:19.613</Modified>
+      <Modified>2016-05-27T03:57:23.710</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.exe">
       <PackagePath>entrypoint\RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-26T14:03:19.252</Modified>
+      <Modified>2016-05-27T03:57:22.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -534,13 +534,9 @@
       <PackagePath>Assets\sale.jpg</PackagePath>
       <Modified>2016-05-26T00:34:55.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-05-25T20:17:38.585</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
-      <PackagePath>EntityFramework.Commands.xml</PackagePath>
-      <Modified>2015-07-21T15:24:16.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\salesale.PNG">
+      <PackagePath>Assets\salesale.PNG</PackagePath>
+      <Modified>2016-05-26T17:06:02.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -576,13 +572,21 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-05-25T20:17:38.578</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2016-05-25T20:17:38.585</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
+      <PackagePath>EntityFramework.Commands.xml</PackagePath>
+      <Modified>2015-07-21T15:24:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\RasporedIspitaPoSalama.xr.xml">
       <PackagePath>RasporedIspitaPoSalama.xr.xml</PackagePath>
-      <Modified>2016-05-26T12:48:35.298</Modified>
+      <Modified>2016-05-27T03:57:22.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +594,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-26T12:48:37.032</Modified>
+      <Modified>2016-05-27T03:57:23.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\bin\x86\Debug\Core\RasporedIspitaPoSalama.exe">
       <PackagePath>RasporedIspitaPoSalama.exe</PackagePath>
-      <Modified>2016-05-26T14:03:19.609</Modified>
+      <Modified>2016-05-27T03:57:23.701</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

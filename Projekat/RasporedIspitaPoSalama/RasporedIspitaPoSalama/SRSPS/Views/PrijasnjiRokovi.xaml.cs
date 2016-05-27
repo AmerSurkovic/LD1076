@@ -26,5 +26,11 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
         {
             this.InitializeComponent();
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            RasporedIspitaPoSalama.App.stekListBox.Push(3);
+
+        }
     }
 }

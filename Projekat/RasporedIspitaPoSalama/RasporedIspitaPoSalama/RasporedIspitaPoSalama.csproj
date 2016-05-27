@@ -97,10 +97,22 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="SRSPS\Helper\Rfid.cs" />
+    <Compile Include="SRSPS\Helper\TestniPodaci.cs" />
     <Compile Include="SRSPS\Models\Administrator.cs" />
+    <Compile Include="SRSPS\Models\IspitniRok.cs" />
+    <Compile Include="SRSPS\Models\Moderator.cs" />
+    <Compile Include="SRSPS\Models\Osoba.cs" />
+    <Compile Include="SRSPS\Models\RasporedUSali.cs" />
     <Compile Include="SRSPS\ViewModels\AdministratorViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\IspitniRokViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\IspitViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\PocetnaViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\SalaViewModel.cs" />
     <Compile Include="SRSPS\Views\IspitniRok.xaml.cs">
       <DependentUpon>IspitniRok.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRSPS\Views\Pomoc.xaml.cs">
+      <DependentUpon>Pomoc.xaml</DependentUpon>
     </Compile>
     <Compile Include="SRSPS\Views\PrijasnjiRokovi.xaml.cs">
       <DependentUpon>PrijasnjiRokovi.xaml</DependentUpon>
@@ -136,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\sale.jpg" />
+    <Content Include="Assets\salesale.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -151,6 +164,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="SRSPS\Views\IspitniRok.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\Pomoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

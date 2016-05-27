@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Image Source="Assets/sale.jpg" />
+        <Image Source="Assets/salesale.jpg" Height="200" HorizontalAlignment="Center" Stretch="UniformToFill" />
     </Grid>
 </Page>

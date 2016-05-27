@@ -41,11 +41,12 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            TextBlock _tb = (TextBlock)e.Parameter;
-            tb = _tb;
-            tb.Text = "Sale";
 
+            /*TextBlock _tb = (TextBlock)e.Parameter;
+            tb = _tb;
+            tb.Text = "Sale";*/
+
+            RasporedIspitaPoSalama.App.stekListBox.Push(2);
         }
     }
 }

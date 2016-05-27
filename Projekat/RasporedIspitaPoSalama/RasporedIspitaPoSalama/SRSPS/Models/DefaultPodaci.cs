@@ -10,48 +10,56 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
     {
         public static void Initialize(RasporedIspitaPoSalamaDbContext context)
         {
-            if (!context.Sale.Any())
+            try
             {
-                context.Sale.AddRange(
-                new Sala()
+                if (!context.Sale.Any())
                 {
-                    naziv = "S-01",
-                    kapacitet = 40,
-                    brojPrijavljenih = 0,
-                    trenutnaTemperatura = 25.0f,
-                    termini = null,
-                }
-                );
-                context.SaveChanges();
-            }
-            if(!context.Predmeti.Any())
-            {
-                context.Predmeti.AddRange(
-                new Predmet()
-                {
-                    predmetID = 1,
-                    naziv = "IM2",
-                    ects = 6,
-                    brojUpisanihStudenata = 10000,
-                    godina = 1,
-                    semestar = 2,              
+                    context.Sale.AddRange(
+                    new Sala("S1")
+                    {
+                        salaID = 1,
+                        kapacitet = 40
 
+                    }
+                    );
+                    context.SaveChanges();
                 }
-                );
-
-                context.SaveChanges();
-            }
-            if(!context.Ispiti.Any())
-            {
-                context.Ispiti.AddRange(
-                new Ispit()
+                if (!context.Predmeti.Any())
                 {
-                    ispitID = 1,
-                    brojPrijavljenih = 10000,
-                    vrijemeIspita = DateTime.Now,
+                    context.Predmeti.AddRange(
+                    new Predmet()
+                    {
+                        predmetID = 1,
+                        naziv = "IM2",
+                        ects = 6,
+                        brojUpisanihStudenata = 10000,
+                        godina = 1,
+                        semestar = 2,
+
+                    }
+                    );
+
+                    context.SaveChanges();
                 }
-                );
+                if (!context.Ispiti.Any())
+                {
+                    context.Ispiti.AddRange(
+                    new Ispit()
+                    {
+                        ispitID = 1,
+                        brojPrijavljenih = 10000,
+
+                    }
+                    );
+                }
             }
+            catch(ArgumentNullException e)
+            {
+                
+                string s=e.Source.ToString();
+                int x = 1;
+            }
+            
         }
     }
 }

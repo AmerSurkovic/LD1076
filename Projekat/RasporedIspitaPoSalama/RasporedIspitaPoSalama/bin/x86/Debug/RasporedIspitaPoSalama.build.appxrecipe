@@ -399,11 +399,8 @@
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\sale.jpg">
       <PackagePath>Assets\sale.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
-      <PackagePath>EntityFramework.Commands.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\salesale.PNG">
+      <PackagePath>Assets\salesale.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -431,6 +428,12 @@
     <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vedad\Documents\LD1076\Projekat\RasporedIspitaPoSalama\RasporedIspitaPoSalama\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
+      <PackagePath>EntityFramework.Commands.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vedad\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>

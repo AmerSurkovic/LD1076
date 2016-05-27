@@ -8,7 +8,11 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
 {
     public abstract class Prostorija
     {
-        public float povrsina { get; set; }
         public string naziv { get; set; }
+
+        public Prostorija(string _naziv)
+        {
+            naziv = _naziv;
+        }
     }
 }

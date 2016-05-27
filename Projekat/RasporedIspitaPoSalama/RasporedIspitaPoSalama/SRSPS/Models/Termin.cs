@@ -13,13 +13,12 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
         public int TerminID { get; set; }
         public DateTime vrijemePocetka { get; set; }
         public DateTime vrijemeZavrsetka { get; set; }
-        public Predmet predmet { get; set; }
 
-        public Termin(DateTime vrijemePocetak, DateTime vrijemeZavrsetak, Predmet pred)
+        public Termin(int _id, DateTime vrijemePocetak, DateTime vrijemeZavrsetak)
         {
+            TerminID = _id;
             vrijemePocetka = vrijemePocetak;
             vrijemeZavrsetka = vrijemeZavrsetak;
-            predmet = pred;
         }
     }
 }

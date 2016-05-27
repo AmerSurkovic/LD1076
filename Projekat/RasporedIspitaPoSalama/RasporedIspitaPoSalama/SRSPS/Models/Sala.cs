@@ -12,8 +12,16 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int salaID { get; set; }
         public int kapacitet { get; set; }
-        public float trenutnaTemperatura { get; set; }
-        public List<Termin> termini { get; set; }
-        public int brojPrijavljenih { get; set; }
+        // public List<Termin> termini { get; set; }
+        public Sala() : base("default") { }
+        public Sala(string sala) : base(sala) {  }
+
+        public Sala(int _id, string _naziv, int _kapacitet) : base(_naziv)
+        {       
+            salaID = _id;
+            kapacitet = _kapacitet;
+           
+        }
+
     }
 }
