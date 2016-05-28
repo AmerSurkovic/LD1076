@@ -38,11 +38,11 @@ namespace RasporedIspitaPoSalama
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            using (var db = new RasporedIspitaPoSalamaDbContext())
+   /*         using (var db = new RasporedIspitaPoSalamaDbContext())
             {
                 db.Database.ApplyMigrations();
                 DefaultPodaci.Initialize(db);
-            }
+            }*/
 
         }
 
