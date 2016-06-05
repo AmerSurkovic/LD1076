@@ -1,10 +1,12 @@
-﻿using System;
+﻿using RasporedIspitaPoSalama.SRSPS.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,30 +25,33 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
     /// 
     
     public sealed partial class Sale : Page
-    {
+    {     
 
-        TextBlock tb;
         public Sale()
         {
             this.InitializeComponent();
+
+         SalaViewModel saleVM = new SalaViewModel();
+
+           DataContext = saleVM;
         }
 
         public Sale(TextBlock _tb)
         {
             this.InitializeComponent();
-            tb = _tb;
-            tb.Text = "Sale";
+            
             
         }
 
+        public object SaleViewModel { get; set; }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            App.tbTrenutnaStranica.Text = "Sale";
 
-            /*TextBlock _tb = (TextBlock)e.Parameter;
-            tb = _tb;
-            tb.Text = "Sale";*/
+            if (e.Parameter != null)
+                ((SalaViewModel)DataContext).trenutniFrame = (Frame)e.Parameter;
 
-            RasporedIspitaPoSalama.App.stekListBox.Push(2);
         }
     }
 }

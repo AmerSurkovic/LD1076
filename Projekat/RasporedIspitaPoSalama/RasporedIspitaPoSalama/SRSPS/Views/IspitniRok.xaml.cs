@@ -26,16 +26,17 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
         public IspitniRok()
         {
             this.InitializeComponent();
-
-            IspitniRokViewModel isptiniRokVM = new IspitniRokViewModel();
-
-            DataContext = isptiniRokVM;
+            App.tbTrenutnaStranica.Text = "Pregled roka";
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            RasporedIspitaPoSalama.App.stekListBox.Push(1);
-            
+            DataContext = (IspitniRokViewModel)e.Parameter;
+        }
+
+        private void listViewIspiti_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ((IspitniRokViewModel)DataContext).pritisnutIspit.Execute((Models.Ispit)e.ClickedItem);
         }
     }
 

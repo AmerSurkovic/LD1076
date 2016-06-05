@@ -14,81 +14,51 @@ namespace RasporedIspitaPoSalamaMigrations
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");
 
-            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Predmet", b =>
+            builder.Entity("RasporedIspitaPoSalama.SRSPS.Models.Predmet", b =>
                 {
                     b.Property<int>("predmetID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("naziv");
+                    b.Property<int>("brojUpisanihStudenata");
+
+                    b.Property<float>("ects");
 
                     b.Property<int>("godina");
 
-                    b.Property<string>("semestar");
+                    b.Property<string>("naziv");
 
-                    b.Property<string>("ects");
-
-                    b.Property<string>("brojPrijavljenihStudenata");
+                    b.Property<int>("semestar");
 
                     b.Key("predmetID");
                 });
 
-            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Sala", b =>
+            builder.Entity("RasporedIspitaPoSalama.SRSPS.Models.Sala", b =>
                 {
                     b.Property<int>("salaID")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int>("brojPrijavljenih");
 
                     b.Property<int>("kapacitet");
 
                     b.Property<string>("naziv");
 
-                    b.Property<float>("povrsina");
-
-                    b.Property<float>("trenutnaTemperatura");
-
                     b.Key("salaID");
                 });
 
-            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Termin", b =>
+            builder.Entity("RasporedIspitaPoSalama.SRSPS.Models.Student", b =>
                 {
-                    b.Property<int>("TerminID")
+                    b.Property<int>("studentID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("SalasalaID");
+                    b.Property<int>("brojIndeksa");
 
-                    b.Property<int?>("predmetpredmetID");
+                    b.Property<DateTime>("datumRodjenja");
 
-                    b.Property<DateTime>("vrijemePocetka");
+                    b.Property<string>("ime");
 
-                    b.Property<DateTime>("vrijemeZavrsetka");
+                    b.Property<string>("prezime");
 
-                    b.Key("TerminID");
+                    b.Key("studentID");
                 });
-
-            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Termin", b =>
-                {
-                    b.Reference("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Sala")
-                        .InverseCollection()
-                        .ForeignKey("SalasalaID");
-
-                    b.Reference("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Predmet")
-                        .InverseCollection()
-                        .ForeignKey("predmetpredmetID");
-                });
-
-            builder.Entity("RasporedIspitaPoSalama.RasporedIspitaPoSalamaBaza.Models.Ispit", b =>
-            {
-                b.Property<int>("IspitID")
-                    .ValueGeneratedOnAdd();
-
-                b.Property<int>("brojPrijavljenih");
-
-                b.Property<DateTime>("vrijemeIspita");
-
-                b.Key("IspitID");
-            });
-
         }
     }
 }

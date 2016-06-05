@@ -14,8 +14,9 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
     {
         public DbSet<Sala> Sale { get; set; }
         public DbSet<Predmet> Predmeti { get; set; }
-        public DbSet<Termin> Termini { get; set; }
-        public DbSet<Ispit> Ispiti { get; set; }
+        //public DbSet<Administrator> Admini { get; set; }
+        public DbSet<Student> Studenti { get; set; }
+        //public DbSet<Ispit> Ispiti { get; set; } 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string databaseFilePath = "RasporedIspitaPoSalama.db";

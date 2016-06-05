@@ -5,9 +5,63 @@
     xmlns:local="using:RasporedIspitaPoSalama.SRSPS.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:RasporedIspitaPoSalama.SRSPS.Models"
     mc:Ignorable="d">
+  
+    <Page.Resources>
+        <DataTemplate x:Key="SalaListTemplate"  x:DataType="models:Sala">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{x:Bind naziv}" HorizontalAlignment="Left"/>
+                <TextBlock Text="{x:Bind kapacitet}" Grid.Column="1" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind salaID }" Grid.Column="2" HorizontalAlignment="Right"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
 
     <Grid>
-        <Image Source="Assets/salesale.jpg" Height="200" HorizontalAlignment="Center" Stretch="UniformToFill" />
+        <TextBlock x:Name="prikazSala_label1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Raspolozive sale:" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="dodajSalu_button" FontFamily="Segoe MDL2 Assets" Content="&#xE109;" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Command="{Binding Path=UnosSale}"/>
+        <Button x:Name="izbrisiSalu_button" FontFamily="Segoe MDL2 Assets" Content="&#xE74D;" HorizontalAlignment="Left" Margin="90,55,0,0" VerticalAlignment="Top" Command="{Binding Path=Obrisi}"/>
+        <Button x:Name="editujSalu_button" FontFamily="Segoe MDL2 Assets" Content="&#xE1C2;" HorizontalAlignment="Left" Margin="50,55,0,0" VerticalAlignment="Top"  Command="{Binding Path=EditSale}"/>
+
+        <ListView x:Name="prikazSala_listView1" ItemTemplate="{StaticResource SalaListTemplate}" 
+            IsItemClickEnabled="True" SelectedValue="{Binding Path=selectedItem, Mode=TwoWay}"
+            ItemsSource="{Binding Sale}" Margin="10,92,10,10">
+            <ListView.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock HorizontalAlignment="Left" Grid.Column="0">Naziv</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="1">Kapacitet</TextBlock>
+                            <TextBlock HorizontalAlignment="Right" Grid.Column="2">ID Sale</TextBlock>
+                        </Grid>
+                        <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                    </Grid>
+                </ControlTemplate>
+            </ListView.Template>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        
     </Grid>
 </Page>

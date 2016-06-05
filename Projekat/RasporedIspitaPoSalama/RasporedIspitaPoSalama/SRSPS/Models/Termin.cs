@@ -20,5 +20,10 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
             vrijemePocetka = vrijemePocetak;
             vrijemeZavrsetka = vrijemeZavrsetak;
         }
+
+        public override String ToString()
+        {
+            return vrijemePocetka.Date.ToString();
+        }
     }
 }

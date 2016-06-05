@@ -3,6 +3,7 @@ using RasporedIspitaPoSalama.SRSPS.Models;
 using RasporedIspitaPoSalama.SRSPS.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -30,7 +31,8 @@ namespace RasporedIspitaPoSalama
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         /// 
-        public static Stack<int> stekListBox=new Stack<int>();
+        public static TextBlock tbTrenutnaStranica { get; set; }
+
         public App()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
@@ -38,11 +40,11 @@ namespace RasporedIspitaPoSalama
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-   /*         using (var db = new RasporedIspitaPoSalamaDbContext())
+            using (var db = new RasporedIspitaPoSalamaDbContext())
             {
                 db.Database.ApplyMigrations();
                 DefaultPodaci.Initialize(db);
-            }*/
+            }
 
         }
 

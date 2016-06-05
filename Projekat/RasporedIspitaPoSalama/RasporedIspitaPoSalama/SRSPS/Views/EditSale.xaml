@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="RasporedIspitaPoSalama.SRSPS.Views.EditSale"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RasporedIspitaPoSalama.SRSPS.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="editSale_label1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Izmjena sale" FontSize="24" VerticalAlignment="Top"/>
+        <TextBlock x:Name="editSale_label2" HorizontalAlignment="Left" Margin="44,58,0,0" TextWrapping="Wrap" Text="Naziv sale:" FontSize="18" VerticalAlignment="Top"/>
+        <TextBox x:Name="imeSale_textBox" HorizontalAlignment="Left" Margin="132,58,0,0" TextWrapping="Wrap" Text="{Binding Path=Parent.selectedItem.naziv, Mode=TwoWay}" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="editSale_label3" HorizontalAlignment="Left" Margin="14,95,0,0" TextWrapping="Wrap" Text="Kapacitet sale:" FontSize="18:" VerticalAlignment="Top"/>
+        <TextBox x:Name="editSale_textBox" HorizontalAlignment="Left" Margin="132,95,0,0" TextWrapping="Wrap" Text="{Binding Path=Parent.selectedItem.kapacitet, Mode=TwoWay}" Width="200" VerticalAlignment="Top"/>
+        <Button x:Name="crtanjeSale_button" FontFamily="Segoe MDL2 Assets" Content="&#59151;" HorizontalAlignment="Left" Margin="132,132,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="editSale_label4" HorizontalAlignment="Left" Margin="84,132,0,0" TextWrapping="Wrap" Text="Paint:" VerticalAlignment="Top" FontSize="18"/>
+        <StackPanel  Margin="144,180,0,0" Orientation="Horizontal">
+            <Button x:Name="editSalu_button" Content="Potvrdi promjene" HorizontalAlignment="Left" Command="{Binding Path=Edit}" VerticalAlignment="Top"/>
+            <Button Content="Natrag" Margin="10,0,0,0" Command="{Binding idi_nazad}" VerticalAlignment="Top"/>
+        </StackPanel>
+        
+
+    </Grid>
+</Page>

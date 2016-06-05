@@ -11,7 +11,7 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
         public int id { get; set; }
         public Sala sala { get; set; }
         public int brojSlobodnihMjesta { get; set; }
-        bool[,] raspored;
+        public bool[,] raspored;
 
         public RasporedUSali(int _id, Sala _sala, int _brojSlobodnihMjesta, bool[,] _raspored)
         {
@@ -19,6 +19,11 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
             sala = _sala;
             brojSlobodnihMjesta = _brojSlobodnihMjesta;
             raspored = _raspored;
+        }
+
+        public override string ToString()
+        {
+            return sala.naziv;
         }
     }
 }

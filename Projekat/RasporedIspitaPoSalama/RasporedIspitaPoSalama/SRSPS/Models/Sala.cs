@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -15,12 +16,11 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
         // public List<Termin> termini { get; set; }
         public Sala() : base("default") { }
         public Sala(string sala) : base(sala) {  }
-
+        
         public Sala(int _id, string _naziv, int _kapacitet) : base(_naziv)
         {       
             salaID = _id;
             kapacitet = _kapacitet;
-           
         }
 
     }

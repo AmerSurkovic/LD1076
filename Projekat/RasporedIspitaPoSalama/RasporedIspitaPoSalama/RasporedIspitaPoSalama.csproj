@@ -96,35 +96,53 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160605021410_InitialMigration.cs" />
+    <Compile Include="Migrations\20160605021410_InitialMigration.designer.cs">
+      <DependentUpon>20160605021410_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
+    <Compile Include="SRSPS\Helper\NavigationService.cs" />
     <Compile Include="SRSPS\Helper\Rfid.cs" />
     <Compile Include="SRSPS\Helper\TestniPodaci.cs" />
     <Compile Include="SRSPS\Models\Administrator.cs" />
     <Compile Include="SRSPS\Models\IspitniRok.cs" />
-    <Compile Include="SRSPS\Models\Moderator.cs" />
     <Compile Include="SRSPS\Models\Osoba.cs" />
     <Compile Include="SRSPS\Models\RasporedUSali.cs" />
+    <Compile Include="SRSPS\Models\Student.cs" />
     <Compile Include="SRSPS\ViewModels\AdministratorViewModel.cs" />
+    <Compile Include="SRSPS\Helper\INavigationService.cs" />
+    <Compile Include="SRSPS\ViewModels\DetaljiIspitVM.cs" />
+    <Compile Include="SRSPS\ViewModels\DodavanjeIspitaVM.cs" />
+    <Compile Include="SRSPS\ViewModels\EditSaleViewModel.cs" />
     <Compile Include="SRSPS\ViewModels\IspitniRokViewModel.cs" />
     <Compile Include="SRSPS\ViewModels\IspitViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\ListIspitnihRokovaVM.cs" />
     <Compile Include="SRSPS\ViewModels\PocetnaViewModel.cs" />
+    <Compile Include="SRSPS\Helper\RelayCommand.cs" />
+    <Compile Include="SRSPS\ViewModels\RasporedUSaliVM.cs" />
     <Compile Include="SRSPS\ViewModels\SalaViewModel.cs" />
+    <Compile Include="SRSPS\ViewModels\UnosSaleViewModel.cs" />
+    <Compile Include="SRSPS\Views\DetaljiIspit.xaml.cs">
+      <DependentUpon>DetaljiIspit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRSPS\Views\DodavanjeIspita.xaml.cs">
+      <DependentUpon>DodavanjeIspita.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRSPS\Views\EditSale.xaml.cs">
+      <DependentUpon>EditSale.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SRSPS\Views\IspitniRok.xaml.cs">
       <DependentUpon>IspitniRok.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRSPS\Views\ListIspitnihRokova.xaml.cs">
+      <DependentUpon>ListIspitnihRokova.xaml</DependentUpon>
     </Compile>
     <Compile Include="SRSPS\Views\Pomoc.xaml.cs">
       <DependentUpon>Pomoc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SRSPS\Views\PrijasnjiRokovi.xaml.cs">
-      <DependentUpon>PrijasnjiRokovi.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SRSPS\Views\Prijava administratora.xaml.cs">
       <DependentUpon>Prijava administratora.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160423192300_InitialMigration.cs" />
-    <Compile Include="Migrations\20160423192300_InitialMigration.designer.cs">
-      <DependentUpon>20160423192300_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SRSPS\Models\DefaultPodaci.cs" />
     <Compile Include="SRSPS\Models\Ispit.cs" />
@@ -136,8 +154,14 @@
     <Compile Include="SRSPS\Views\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SRSPS\Views\RasporedUSali.xaml.cs">
+      <DependentUpon>RasporedUSali.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SRSPS\Views\Sale.xaml.cs">
       <DependentUpon>Sale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRSPS\Views\Unos sale.xaml.cs">
+      <DependentUpon>Unos sale.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -163,15 +187,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="SRSPS\Views\DetaljiIspit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\DodavanjeIspita.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\EditSale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SRSPS\Views\IspitniRok.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SRSPS\Views\Pomoc.xaml">
+    <Page Include="SRSPS\Views\ListIspitnihRokova.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SRSPS\Views\PrijasnjiRokovi.xaml">
+    <Page Include="SRSPS\Views\Pomoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,7 +219,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SRSPS\Views\RasporedUSali.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SRSPS\Views\Sale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\Unos sale.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

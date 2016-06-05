@@ -85,6 +85,6 @@ C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\b
 C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\bin\System.Web.Http.Owin.xml
-C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\obj\Debug\WebServis.csprojResolveAssemblyReference.cache
 C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\obj\Debug\WebServis.dll
 C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\obj\Debug\WebServis.pdb
+C:\Users\edinb\Desktop\Kithub\LD1076\Projekat\RasporedIspitaPoSalama\WebServis\obj\Debug\WebServis.csprojResolveAssemblyReference.cache

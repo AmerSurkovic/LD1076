@@ -9,6 +9,7 @@ namespace RasporedIspitaPoSalama.SRSPS.Models
 {
     public class IspitniRok 
     {
+        public String imeRoka { get; set; }
         public DateTime datumPocetka { get; set; }
         public DateTime datumKraja { get; set; }
         public List<Sala> saleNaRaspolaganju { get; set; }

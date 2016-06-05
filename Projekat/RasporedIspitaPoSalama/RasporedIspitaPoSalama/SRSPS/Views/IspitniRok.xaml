@@ -5,15 +5,76 @@
     xmlns:local="using:RasporedIspitaPoSalama"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:RasporedIspitaPoSalama.SRSPS.Models"
     mc:Ignorable="d">
+   
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel Name="stekPanelIspiti">
-            <TextBlock Name="tBlockIspiti" Text="Ispiti"/>
-            
+    <Page.Resources>
+        <DataTemplate x:Key="IspitListTemplate"  x:DataType="models:Ispit">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{x:Bind predmet.naziv}" HorizontalAlignment="Left"/>
+                <TextBlock Text="{x:Bind brojPrijavljenih}" Grid.Column="1" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind termin.vrijemePocetka }" Grid.Column="2" HorizontalAlignment="Right"/>
 
-        </StackPanel>
-        
-        
-    </Grid>
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <StackPanel>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <ListView x:Name="listViewIspiti" ItemTemplate="{StaticResource IspitListTemplate}" 
+                  Height="Auto"
+                  IsItemClickEnabled="True"
+                  ItemsSource="{Binding ispitniRok.ispiti}" Margin="10,50,10,10" 
+                  SelectedValue="{Binding odabraniIspit, Mode=TwoWay}"
+                  ItemClick="listViewIspiti_ItemClick"
+                 >
+                <ListView.Template>
+                    <ControlTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="8*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="8*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock HorizontalAlignment="Center" Grid.Column="0" FontWeight="Bold">Predmet</TextBlock>
+                                <AppBarSeparator Grid.Column="1"/>
+                                <TextBlock HorizontalAlignment="Center" Grid.Column="2" FontWeight="Bold">Broj Prijavljenih</TextBlock>
+                                <AppBarSeparator Grid.Column="3"/>
+                                <TextBlock HorizontalAlignment="Center" Grid.Column="4" FontWeight="Bold">Vrijeme održavanja</TextBlock>
+                            </Grid>
+                            <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </ListView.Template>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+        </Grid>
+        <Grid>
+            <Button FontFamily="Segoe MDL2 Assets" Content="&#xE109;" HorizontalAlignment="Left" Margin="20,0,0,20" Command="{Binding dodaj_ispit}"/>
+            <Button Content="Natrag" HorizontalAlignment="Right" Margin="0,0,20,20" Command="{Binding idiNazad}"/>
+        </Grid>
+                
+    </StackPanel>
+    
 </Page>

@@ -35,11 +35,7 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            /*TextBlock _tb = (TextBlock)e.Parameter;
-            tb = _tb;
-            tb.Text = "Admin Login";*/
-
-            RasporedIspitaPoSalama.App.stekListBox.Push(4);
+          
         }
     }
 }

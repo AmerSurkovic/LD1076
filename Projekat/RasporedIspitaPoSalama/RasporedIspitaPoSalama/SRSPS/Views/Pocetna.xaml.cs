@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,11 +27,17 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
       
         public Pocetna()
         {
-            this.InitializeComponent();         
-            tBlockStranica.Text = "Ispitni rok";
-            RasporedIspitaPoSalama.App.stekListBox.Push(1);
+            this.InitializeComponent();
+
+            var currentView = SystemNavigationManager.GetForCurrentView();
+
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+
+            App.tbTrenutnaStranica = tBlockStranica;
+            tBlockStranica.Text = "Ispitni rokovi";
+           
             tBoxSearch.FontStyle = Windows.UI.Text.FontStyle.Italic;
-            glavniFrame.Navigate(typeof(IspitniRok));
+            glavniFrame.Navigate(typeof(ListIspitnihRokova), glavniFrame);
         }
 
         private void buttonHamburger_Click(object sender, RoutedEventArgs e)
@@ -61,70 +68,36 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
 
             if (listBoxItem_Home.IsSelected)
             {
-                tBlockStranica.Text = "Ispitni Rok";
-                glavniFrame.Navigate(typeof(IspitniRok), tBlockStranica);
+                tBlockStranica.Text = "Ispitni Rokovi";
+                glavniFrame.Navigate(typeof(ListIspitnihRokova), glavniFrame);
             }
             
             else if(listBoxItem_drugi.IsSelected)
             {
-                tBlockStranica.Text = "Sale";
-                glavniFrame.Navigate(typeof(Sale), tBlockStranica);
+                tBlockStranica.Text = "Sale"; 
+                glavniFrame.Navigate(typeof(Sale), glavniFrame);
                      
             }
-            else if (listBoxItem_treci.IsSelected)
-            {
-
-                tBlockStranica.Text = tBlock3.Text;
-                glavniFrame.Navigate(typeof(PrijasnjiRokovi), tBlockStranica);
-
-            }
+        
             else if (listBoxItem_Admin.IsSelected)
             {
                 tBlockStranica.Text = "Admin Login";
-                glavniFrame.Navigate(typeof(Prijava_administratora), tBlockStranica);
+                glavniFrame.Navigate(typeof(Prijava_administratora));
 
 
             }
-            else
+            else if (listBoxItem_Vrijeme.IsSelected)
             {
-                tBlockStranica.Text = "Pomoc";
-                glavniFrame.Navigate(typeof(PrijasnjiRokovi), tBlockStranica);
+                tBlockStranica.Text = "Vremenska prognoza";
+               // glavniFrame.Navigate(typeof(VremenskaPrognoza), tBlockStranica);
             }
+            
         }
 
         private void button_Back_Click(object sender, RoutedEventArgs e)
-        {
-            if(glavniFrame.CanGoBack && RasporedIspitaPoSalama.App.stekListBox.Count>0)
-            {
-                if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 1)
-                {
-                    tBlockStranica.Text = "Početna";
-                   // listBoxItem_Home.IsSelected = true;
-                }
-                    
-                else if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 2)
-                {
-                    tBlockStranica.Text = "Sale";
-                    //listBoxItem_drugi.IsSelected = true;
-                }
-                    
-                else if (RasporedIspitaPoSalama.App.stekListBox.Peek() == 3)
-                {
-                    tBlockStranica.Text = "Prijašnji ispiti";
-                    //listBoxItem_treci.IsSelected = true;
-                }
-                    
-                else
-                {
-                    tBlockStranica.Text = "Admin Login";
-                    //listBoxItem_Admin.IsSelected=true;
-                }
-                    
-                RasporedIspitaPoSalama.App.stekListBox.Pop();
-               
-
+        {            
                 glavniFrame.GoBack();
-            }
+            
         }
 
     }
