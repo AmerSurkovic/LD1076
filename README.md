@@ -49,8 +49,20 @@ Akteri datog sistema su:
 ## Final Info
 
 - Koristili smo SqlLite 7.0 LOCAL bazu za pohranjivanje naših podataka 
+
 - Korišten je RFID uređaj za prijavu administratora, kod se nalazi u klasi 'Prijava administratora.xaml.cs'
-- Validacija je ispoštovana kod prijave administratora 
+  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/Rfid.cs
+  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/ViewModels/AdministratorViewModel.cs
+  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Views/Prijava%20administratora.xaml.cs
+
+- Validacija je ispoštovana kod CRUD operacija za ispite i sala
+
 - Koristi se OpenWeatherMap eksterni servis,a klasa u kojoj se poziva api jeste 'VremenskaPrognozaProxy.cs'
-- Implementirano je korištenje GPS-a uređaja i to u klasi 'LocationManager.cs', te se prikaz teksta u svim klasama 'wrap'-a kako bi se prilagodilo Windows Phone-u
+  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/VremenskaPrognozaProxy.cs
+
+- Implementirano je korištenje GPS-a uređaja i to u klasi 'LocationManager.cs', te se prikaz teksta u view-u Help npr. 'wrap'-a kako bi se prilagodilo Windows Phone-u
+  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/LocationManager.cs
+  
 - WebServis se pruža za administratora i to mogućnost CRUD opercija za Sale, Predmete, Ispite. Nalazi se u posebnoj ASP.NET MVC aplikaciji 'WebAplikacija'
+
+- Help
