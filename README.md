@@ -16,23 +16,26 @@ Cilj je da se studentima/učenicima obezbjedi pregled detalja vezanih za ispitni
 
 Djelatnik ustanove unosi podatke o ispitu (maksimalan broj učesnika koji mogu izaći na ispit/testiranje, način rasporeda studenata, željeni datum i vrijeme održavanja  itd.). Sistem onda na osnovu raspoloživih informacija daje optimalnu raspodjelu studenata ukoliko je to uopšte moguće, dok u suprotnom predlaže nekoliko alternativnih mogučnosti (drugi datum ili druga satnica). Kada djelatnik nađe zadovoljavajući termin i raspored podaci se spašavaju i svi korisnici sistema imaju mogućnost da vide ove izmjene (internet).
 
-Jedna od mogućih izmjena koje djelatnik ustanove može da obavi jeste otkazivanje ispita koji je već prijavljen u sistemu. Otkazivanje ispita se vrši isključivo 24 sata prije zakazanog termina održavanja ispita budući da oslobađanje sale u kojoj je otkazani ispit trebao biti održan može dati novo optimalno rješenje rasporeda studenata.
-Djelatnik ustanove ili administrator posjeduje mogućnost registracije asistenata za poziciju dežurstva po kriteriju da asistent ne smije biti dežurni na predmetu na kojem je član nastavnog ansambla.
+Jedna od mogućih izmjena koje djelatnik ustanove može da obavi jeste otkazivanje ispita koji je već prijavljen u sistemu.
 
-Svi korisnici imaju pristup informacijama o trenutnoj temperaturi unutar prostorija za polaganje ispita, te u zavisnosti od iste, djelatnici ustanove mogu proslijediti podatke osoblju zaduženo za regulaciju temperature, koje će nadalje uključiti grijanje prostorija, odnosno klima uređaj za hlađenje, u zavisnosti od potreba. Mjerenje temperature ćemo obezbijediti pomoću eksternog uređaja; za potrebnu funkcionalnost zadate aplikacije koristit ćemo Raspberry Pi ili Arduino (zavisno od dostupnosti uređaja) te očitane podatke spasiti u bazu podataka, iz koje će korisnici čitati informacije o datoj temperaturi u prostoriji.
+Administrator ima opciju prijave pomoću svog unaprijed dodijeljenog username-a i passworda ili pomoću koda svoje magnetne kartice koja
+je skenirana pomoću RFID uređaja. Administratorska prijava će biti uspješna ukoliko je kod skenirane kartice iz liste kodova koji su 
+spašeni u bazu.
 
+Svi korisnici imaju opciju pregleda vremenske prognoze za taj dan, pri čemu sistem pomoću GPS-a na korisničkom uređaju (ukoliko takav postoji) određuje tačnu lokaciju za prikaz. Ovaj eksterni servis je posebno namijenjen za Windows Phone uređaje, na kojim se to lagano
+može istestirati. 
 
+Administratori također imaju opciju izvršenja CRUD operacija nad svim važnijim pojmovima ovog sistema, koristeći ASP.NET aplikaciju. Pokretanje istog se može izvršiti kroz poziv 'WebAplikacija'. 
 
 ## Funkcionalnosti
 
 - Mogućnost organizacije ispita
 - Mogućnost otkazivanja ispita
-- Obavještavanje korisnika sistema o svim promjenama
-- Mogućnost unosa novih sala u sistem te ažuriranje stanja svih sala u smislu rasporeda stolova, stolica i sl.
-- Mogućnost unosa podataka o osobama koje su zadužene za samo sprovođenje ispita (asistenti, profesori)
+- Mogućnost unosa novih sala u sistem te ažuriranje stanja svih sala
 - Dodjeljivanje prioriteta predmetima, semestrima, godinama studija i slično
-- Odabir načina raspodjele studenata u skladu sa željenim novoom sigurnosti da ne bi došlo do neželjenih radnji kao što su prepisivanje  i/ili korištenje nedozvoljenih sredstava
-- Praćenje trenutne temperature u salama i laboratorijama gdje se održavaju ispiti, kako bi studenti imali mogućnost rada u optimalnim okolnostima
+- Prijava administratora skeniranjem njegove magnetne kartice koristeći RFID uređaj
+- Pregled vrememenske prognoze za taj dan za lokaciju koja je određena GPS-om na korisničkom uređaju (laptop/mobitel)
+- Administratorski pristup svim važnijim operacijama kroz ASP.NET MVC aplikaciju
 
 ## Akteri
 
@@ -42,3 +45,12 @@ Akteri datog sistema su:
  - Administrativno osoblje (npr. studentska služba)
    Administrator sistema ima mogućnost registracije ispita te postavljanja restrikcija na same ispite.
    
+
+## Final Info
+
+- Koristili smo SqlLite 7.0 LOCAL bazu za pohranjivanje naših podataka 
+- Korišten je RFID uređaj za prijavu administratora, kod se nalazi u klasi 'Prijava administratora.xaml.cs'
+- Validacija je ispoštovana kod prijave administratora 
+- Koristi se OpenWeatherMap eksterni servis,a klasa u kojoj se poziva api jeste 'VremenskaPrognozaProxy.cs'
+- Implementirano je korištenje GPS-a uređaja i to u klasi 'LocationManager.cs', te se prikaz teksta u svim klasama 'wrap'-a kako bi se prilagodilo Windows Phone-u
+- WebServis se pruža za administratora i to mogućnost CRUD opercija za Sale, Predmete, Ispite. Nalazi se u posebnoj ASP.NET MVC aplikaciji 'WebAplikacija'
