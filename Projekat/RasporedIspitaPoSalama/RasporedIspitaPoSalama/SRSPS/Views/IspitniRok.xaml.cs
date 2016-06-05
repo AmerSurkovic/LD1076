@@ -27,6 +27,16 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
         {
             this.InitializeComponent();
             App.tbTrenutnaStranica.Text = "Pregled roka";
+
+            if (App.admin == true)
+            {
+                dodajIspit.Visibility = Visibility.Visible;
+            }
+            else
+            {
+
+                dodajIspit.Visibility = Visibility.Collapsed;
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -40,6 +50,6 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
         }
     }
 
-    
-    
+
+
 }

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WebAplikacija.Models.Ispit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ispiti</h2>
+<style>
+    a.my-class {
+        color: #000000;
+    }
+
+        a.my-class:active {
+            color: #000000;
+        }
+
+        a.my-class:link {
+            color: #000000;
+        }
+
+        a.my-class:visited {
+            color: #000000;
+        }
+</style>
+<p>
+    @Html.ActionLink("Dodaj novi ispit", "Create", null, new { @class = "my-class" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.brojPrijavljenih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.termin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.predmet)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.brojPrijavljenih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.termin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.predmet)
+        </td>
+        <td>
+            @Html.ActionLink("Izmijeni", "Edit", new { id=item.ispitID }, new { @class = "my-class" }) |
+            @Html.ActionLink("Detalji", "Details", new { id=item.ispitID }, new { @class = "my-class" }) |
+            @Html.ActionLink("Izbriši", "Delete", new { id=item.ispitID }, new { @class = "my-class" })
+        </td>
+    </tr>
+}
+
+</table>

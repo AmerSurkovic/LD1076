@@ -32,11 +32,12 @@
             <TextBox Name="tBoxBrojPrijavljenih" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Margin="10,7,0,0" Width="200"/>
 
             <DatePicker Name="datePicker" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1" Margin="10,7,0,0" FontWeight="Bold" Width="188"/>
-            <TextBox Name="tBox" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Margin="10,7,0,0" Width="200"/>
+            <TextBox Name="tBoxTrajanje" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Margin="10,7,0,0" Width="200"/>
         </Grid>
 
         <Grid Grid.Row="1">
-            <Button Content="Dodaj ispit" HorizontalAlignment="Left" Margin="10,10,0,20" Command="{Binding dodaj_ispit}"/>
+            <Button Name="dodajIspitButton" Content="Dodaj ispit" HorizontalAlignment="Left" Margin="10,10,0,20" Click="dodajIspitButton_Click"/>
+            <!--="{Binding dodaj_ispit}"/-->
             <Button Content="Natrag" HorizontalAlignment="Right" Margin="0,10,10,20" Command="{Binding idi_nazad}"/>
         </Grid>
     </Grid>

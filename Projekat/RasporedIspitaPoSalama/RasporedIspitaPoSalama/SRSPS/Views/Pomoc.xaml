@@ -1,14 +1,54 @@
 ﻿<Page
-    x:Class="RasporedIspitaPoSalama.SRSPS.Views.Pomoc"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:RasporedIspitaPoSalama.SRSPS.Views"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+   x:Class="RasporedIspitaPoSalama.SRSPS.Views.Pomoc"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   xmlns:local="using:RasporedIspitaPoSalama.SRSPS.Views"
+   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Name="tBlockHelp" Text="HELP" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <RichTextBlock Name="rich" TextWrapping="Wrap"   >
+            <Paragraph></Paragraph>
+            <Paragraph>
+                <Run Text="ISPITNI ROK" Foreground="#FFF10E0E" />
+            </Paragraph>
 
+            <Paragraph>
+                <Run Text="Ukoliko želite da izaberete jedan od ponuđenih ispitnih rokova"/>
+                <Run Text="pritisnite na polje 'Ispitni Rok'. Nadalje, ako vas zanima broj ispita i predmeti iz kojih"/>
+                <Run Text="se održavaju ispiti za taj specifični rok, kliknite na njega."/>
+            </Paragraph>
+            <Paragraph>
+
+            </Paragraph>
+            <Paragraph>
+                <Run Text="SALE" Foreground="#FFF10E0E" />
+            </Paragraph>
+            <Paragraph>
+                <Run Text="Klikom na polje 'Sale' koje ima oblik kvadrata, student ima opciju pregleda svih raspoloživih sala."/>
+                <Run Text="Ukoliko sistemu pristupa Administrator, on ima opciju izmjene i brisanja postojećih sala, kao i dodavanja novih."/>
+            </Paragraph>
+
+            <Paragraph>
+            </Paragraph>
+
+            <Paragraph>
+                <Run Text="ADMIN LOGIN" Foreground="#FFF10E0E" />
+            </Paragraph>
+            <Paragraph>
+                <Run Text="Korisnik ima opciju da se prijavi kao administrator, pri tome se može prijaviti preko username-a i password-a, ili preko kartice, tj. čitanja iste pomoću RFID uređaja"/>
+            </Paragraph>
+            <Paragraph>
+            </Paragraph>
+
+            <Paragraph>
+                <Run Text="VREMENSKA PROGNOZA" Foreground="#FFF10E0E" />
+            </Paragraph>
+            <Paragraph>
+                <Run Text="Ukoliko korisnik aktivira GPS, na tabu će biti trenutno vrijeme na korisničkoj lokaciji. Ovaj servis je najkorisniji ukoliko se aplikacija poziva sa Windows Phone-a."/>
+            </Paragraph>
+
+        </RichTextBlock>
     </Grid>
 </Page>

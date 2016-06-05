@@ -1,0 +1,50 @@
+﻿@model WebAplikacija.Models.Sala
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalji</h2>
+<style>
+    a.my-class {
+        color: #000000;
+    }
+
+        a.my-class:active {
+            color: #000000;
+        }
+
+        a.my-class:link {
+            color: #000000;
+        }
+
+        a.my-class:visited {
+            color: #000000;
+        }
+</style>
+<div>
+    <h4>Sala</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.kapacitet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kapacitet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naziv)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Izmijeni", "Edit", new { id = Model.salaID }, new { @class = "my-class" }) |
+    @Html.ActionLink("Povratak na listu", "Index", null, new { @class = "my-class" })
+</p>

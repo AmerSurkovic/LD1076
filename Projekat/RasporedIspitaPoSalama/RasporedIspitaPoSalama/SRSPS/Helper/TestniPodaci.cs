@@ -10,6 +10,8 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
 {
     public class TestniPodaci
     {
+        public static Models.Administrator admin = new Models.Administrator("Admin", "Adminovic", DateTime.Today) { UserName = "Admin", Password = "admin" };
+
         public Models.IspitniRok ispitniRok;
         public List<Models.Predmet> predmeti;
         public List<Models.Termin> termini;
@@ -59,7 +61,7 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
                 };
 
 
-            
+
 
 
             rus = new List<Models.RasporedUSali>()
@@ -71,25 +73,25 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
                     new Models.RasporedUSali(5,sale[4],10,new bool[10, 10]),
                     new Models.RasporedUSali(6,sale[5],35,new bool[10, 10])
                  };
-                ispitniRok.datumPocetka = Convert.ToDateTime("06.06.2016.");
-                ispitniRok.datumKraja = Convert.ToDateTime("10.07.2016.");
-                ispitniRok.ispiti = new System.Collections.ObjectModel.ObservableCollection<Models.Ispit>();
-                ispitniRok.ispiti.Add(new Models.Ispit(1, 100, termini[0], predmeti[0],rus));
-                ispitniRok.ispiti.Add(new Models.Ispit(2, 100, termini[1], predmeti[1],rus));
-                ispitniRok.ispiti.Add(new Models.Ispit(3, 100, termini[0], predmeti[2],rus));
-                ispitniRok.ispiti.Add(new Models.Ispit(4, 100, termini[1], predmeti[3],rus));
-                ispitniRok.ispiti.Add(new Models.Ispit(5, 100, termini[0], predmeti[4],rus));
-          //      ispitniRok.saleNaRaspolaganju = sale;
-            
-            }
+            ispitniRok.datumPocetka = Convert.ToDateTime("06.06.2016.");
+            ispitniRok.datumKraja = Convert.ToDateTime("10.07.2016.");
+            ispitniRok.ispiti = new System.Collections.ObjectModel.ObservableCollection<Models.Ispit>();
+            ispitniRok.ispiti.Add(new Models.Ispit(1, 100, termini[0], predmeti[0], rus));
+            ispitniRok.ispiti.Add(new Models.Ispit(2, 100, termini[1], predmeti[1], rus));
+            ispitniRok.ispiti.Add(new Models.Ispit(3, 100, termini[0], predmeti[2], rus));
+            ispitniRok.ispiti.Add(new Models.Ispit(4, 100, termini[1], predmeti[3], rus));
+            ispitniRok.ispiti.Add(new Models.Ispit(5, 100, termini[0], predmeti[4], rus));
+            //      ispitniRok.saleNaRaspolaganju = sale;
+
+        }
 
         public static ObservableCollection<Models.IspitniRok> dajIspitneRokove()
         {
-            ObservableCollection<Models.Sala> saleIzBaze=new ObservableCollection<Models.Sala>();
+            ObservableCollection<Models.Sala> saleIzBaze = new ObservableCollection<Models.Sala>();
             List<Models.Predmet> predmetiIzBaze = new List<Models.Predmet>();
             using (var db = new Models.RasporedIspitaPoSalamaDbContext())
             {
-                foreach(Models.Sala s in db.Sale)
+                foreach (Models.Sala s in db.Sale)
                     saleIzBaze.Add(s);
                 foreach (Models.Predmet p in db.Predmeti)
                     predmetiIzBaze.Add(p);
@@ -118,7 +120,7 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
             string format = "dd/MM/yyyy HH:mm";
             CultureInfo provider = CultureInfo.InvariantCulture;
 
-            var  termini = new List<Models.Termin>()
+            var termini = new List<Models.Termin>()
                 {
                     new Models.Termin(1,DateTime.ParseExact("06/06/2016 09:00",format,provider),DateTime.ParseExact("06/06/2016 11:00",format,provider)),
                     new Models.Termin(2,DateTime.ParseExact("06/06/2016 12:00",format,provider),DateTime.ParseExact("06/06/2016 13:30",format,provider))
@@ -131,24 +133,22 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
                 };
 
             bool[,] mraspored = new bool[8, 10];
-            for(int i=0;i<8;i++)
-                for(int j=0;j<10;j++)
+            for (int i = 0; i < 8; i++)
+                for (int j = 0; j < 10; j++)
                 {
                     if (i % 2 == 0 && j % 3 == 0 || j == 0 && i % 2 == 1 || i == 7 & j % 3 == 1)
                         mraspored[i, j] = true;
                     else
                         mraspored[i, j] = false;
                 }
-            var rus = new List<Models.RasporedUSali>()
-                {
-                    new Models.RasporedUSali(1,saleIzBaze[0],20,mraspored),
-                    new Models.RasporedUSali(2,saleIzBaze[1],15,mraspored),
-                    new Models.RasporedUSali(3,saleIzBaze[2],30,mraspored),
-                    new Models.RasporedUSali(4,saleIzBaze[3],25,mraspored),
-                    new Models.RasporedUSali(5,saleIzBaze[4],10,mraspored),
-                    //new Models.RasporedUSali(6,saleIzBaze[5],35,mraspored)
-                 };
-            ir1.imeRoka="SEPTEMBAR";
+            var rus = new List<Models.RasporedUSali>();
+
+            foreach(Models.Sala s in saleIzBaze)
+            {
+                rus.Add(new Models.RasporedUSali(1, s, 20, mraspored));
+            }
+                
+            ir1.imeRoka = "SEPTEMBAR";
             ir1.datumPocetka = Convert.ToDateTime("01.09.2016.");
             ir1.datumKraja = Convert.ToDateTime("01.10.2016.");
             ir1.ispiti = new System.Collections.ObjectModel.ObservableCollection<Models.Ispit>();
@@ -169,10 +169,10 @@ namespace RasporedIspitaPoSalama.SRSPS.Helper
             ir2.ispiti.Add(new Models.Ispit(2, 100, termini[1], predmetiIzBaze[1], rus));
             ir2.ispiti.Add(new Models.Ispit(3, 100, termini[0], predmetiIzBaze[2], rus));
             ir2.ispiti.Add(new Models.Ispit(4, 100, termini[1], predmetiIzBaze[3], rus));
-        
+
             IR_lista.Add(ir2);
 
-           
+
 
             ir3.imeRoka = "JANUAR";
             ir3.datumPocetka = Convert.ToDateTime("10.01.2016.");

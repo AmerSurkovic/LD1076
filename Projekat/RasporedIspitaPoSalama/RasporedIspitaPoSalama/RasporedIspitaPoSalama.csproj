@@ -101,9 +101,11 @@
       <DependentUpon>20160605021410_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\RasporedIspitaPoSalamaDbContextModelSnapshot.cs" />
+    <Compile Include="SRSPS\Helper\LocationManager.cs" />
     <Compile Include="SRSPS\Helper\NavigationService.cs" />
     <Compile Include="SRSPS\Helper\Rfid.cs" />
     <Compile Include="SRSPS\Helper\TestniPodaci.cs" />
+    <Compile Include="SRSPS\Helper\VremenskaPrognozaProxy.cs" />
     <Compile Include="SRSPS\Models\Administrator.cs" />
     <Compile Include="SRSPS\Models\IspitniRok.cs" />
     <Compile Include="SRSPS\Models\Osoba.cs" />
@@ -163,6 +165,9 @@
     <Compile Include="SRSPS\Views\Unos sale.xaml.cs">
       <DependentUpon>Unos sale.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SRSPS\Views\VremenskaPrognoza.xaml.cs">
+      <DependentUpon>VremenskaPrognoza.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -171,6 +176,25 @@
     <None Include="RasporedIspitaPoSalama_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Weather\01d.png" />
+    <Content Include="Assets\Weather\01n.png" />
+    <Content Include="Assets\Weather\02d.png" />
+    <Content Include="Assets\Weather\02n.png" />
+    <Content Include="Assets\Weather\03d.png" />
+    <Content Include="Assets\Weather\03n.png" />
+    <Content Include="Assets\Weather\04d.png" />
+    <Content Include="Assets\Weather\04n.png" />
+    <Content Include="Assets\Weather\05d.png" />
+    <Content Include="Assets\Weather\09d.png" />
+    <Content Include="Assets\Weather\09n.png" />
+    <Content Include="Assets\Weather\10d.png" />
+    <Content Include="Assets\Weather\10n.png" />
+    <Content Include="Assets\Weather\11d.png" />
+    <Content Include="Assets\Weather\11n.png" />
+    <Content Include="Assets\Weather\13d.png" />
+    <Content Include="Assets\Weather\13n.png" />
+    <Content Include="Assets\Weather\50d.png" />
+    <Content Include="Assets\Weather\50n.png" />
     <Content Include="Assets\sale.jpg" />
     <Content Include="Assets\salesale.PNG" />
     <Content Include="Properties\Default.rd.xml" />
@@ -228,6 +252,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SRSPS\Views\Unos sale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SRSPS\Views\VremenskaPrognoza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -33,6 +33,8 @@ namespace RasporedIspitaPoSalama
         /// 
         public static TextBlock tbTrenutnaStranica { get; set; }
 
+        public static bool admin = false;
+
         public App()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(

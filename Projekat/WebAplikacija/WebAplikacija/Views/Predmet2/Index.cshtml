@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WebAplikacija.Models.Predmet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Predemeti</h2>
+<style>
+    a.my-class {
+        color: #000000;
+    }
+
+        a.my-class:active {
+            color: #000000;
+        }
+
+        a.my-class:link {
+            color: #000000;
+        }
+
+        a.my-class:visited {
+            color: #000000;
+        }
+</style>
+<p>
+    @Html.ActionLink("Dodaj novi predmet", "Create",null, new { @class = "my-class" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.godina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.semestar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ects)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brojUpisanihStudenata)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.godina)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.semestar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ects)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brojUpisanihStudenata)
+        </td>
+        <td>
+            @Html.ActionLink("Izmijeni", "Edit", new { id=item.predmetID }, new { @class = "my-class" }) |
+            @Html.ActionLink("Detalji", "Details", new { id=item.predmetID }, new { @class = "my-class" }) |
+            @Html.ActionLink("Izbriši", "Delete", new { id=item.predmetID }, new { @class = "my-class" })
+        </td>
+    </tr>
+}
+
+</table>

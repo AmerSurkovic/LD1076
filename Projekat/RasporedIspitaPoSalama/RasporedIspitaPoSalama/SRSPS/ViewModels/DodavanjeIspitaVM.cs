@@ -25,7 +25,7 @@ namespace RasporedIspitaPoSalama.SRSPS.ViewModels
 
         private void dodajIspit(object o)
         {
-
+            Parent.ispitniRok.ispiti.Add((Models.Ispit)o);
         }
 
         private void idiNazad(object o)

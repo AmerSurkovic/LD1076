@@ -27,6 +27,9 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
             this.InitializeComponent();
         }
 
-       
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

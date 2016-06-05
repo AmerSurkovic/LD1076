@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 
 namespace RasporedIspitaPoSalama.SRSPS.ViewModels
@@ -21,24 +22,49 @@ namespace RasporedIspitaPoSalama.SRSPS.ViewModels
 
         public Sala unos { get; set; }
 
+        private string naziv_sale;
+        public string NazivSale { get { return naziv_sale; } set { naziv_sale = value; OnNotifyPropertyChanged("NazivSale"); } }
+
+        private string kapacitet_sale;
+        public string KapacitetSale { get { return kapacitet_sale; } set { kapacitet_sale = value; OnNotifyPropertyChanged("KapacitetSale"); } }
+
         public UnosSaleViewModel(SalaViewModel p)
         {
             this.Parent = p;
 
-            Potvrda = new RelayCommand<object>(potvrdi);        
+            Potvrda = new RelayCommand<object>(potvrdi);
             Dodaj = new RelayCommand<object>(dodaj);
             unos = new Sala();
         }
 
-        public void dodaj(object parametar)
+        public async void dodaj(object parametar)
         {
-            Parent.Sale.Add(unos);
-            using (var db = new Models.RasporedIspitaPoSalamaDbContext())
+            int parsedValue;
+
+            // Validacija podataka
+            if (String.IsNullOrWhiteSpace(NazivSale))
             {
-                db.Sale.Add(unos);
-                db.SaveChanges();
+                var d = new MessageDialog("Unesite ime sale.", "Neispravan unos imena sale");
+                await d.ShowAsync();
             }
-            Parent.trenutniFrame.GoBack();
+            else if (String.IsNullOrEmpty(KapacitetSale) || !int.TryParse(KapacitetSale, out parsedValue))// || Convert.ToInt32(KapacitetSale) < 0)
+            {
+                var d = new MessageDialog("Unesite kapacitet sale.", "Neispravan unos kapaciteta sale");
+                await d.ShowAsync();
+            }
+            else
+            {
+                unos.naziv = NazivSale;
+                unos.kapacitet = Convert.ToInt32(KapacitetSale);
+                Parent.Sale.Add(unos);
+
+                using (var db = new Models.RasporedIspitaPoSalamaDbContext())
+                {
+                    db.Sale.Add(unos);
+                    db.SaveChanges();
+                }
+                Parent.trenutniFrame.GoBack();
+            }
         }
 
         public void potvrdi(object parametar)
@@ -46,7 +72,7 @@ namespace RasporedIspitaPoSalama.SRSPS.ViewModels
             if (Parent.trenutniFrame.CanGoBack)
                 Parent.trenutniFrame.GoBack();
             //Parent.trenutniFrame.GoBack();
-          //  Parent.NavigationService.GoBack();
+            //  Parent.NavigationService.GoBack();
         }
 
         //implementacija INotifyPropertyChanged interfejsa koji ova klasa implementira

@@ -23,24 +23,38 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     /// 
-    
+
     public sealed partial class Sale : Page
-    {     
+    {
 
         public Sale()
         {
             this.InitializeComponent();
 
-         SalaViewModel saleVM = new SalaViewModel();
+            SalaViewModel saleVM = new SalaViewModel();
 
-           DataContext = saleVM;
+            DataContext = saleVM;
+
+            if (App.admin == true)
+            {
+                dodajSalu_button.Visibility = Visibility.Visible;
+                izbrisiSalu_button.Visibility = Visibility.Visible;
+                editujSalu_button.Visibility = Visibility.Visible;
+            }
+            else
+            {
+
+                dodajSalu_button.Visibility = Visibility.Collapsed;
+                izbrisiSalu_button.Visibility = Visibility.Collapsed;
+                editujSalu_button.Visibility = Visibility.Collapsed;
+            }
         }
 
         public Sale(TextBlock _tb)
         {
             this.InitializeComponent();
-            
-            
+
+
         }
 
         public object SaleViewModel { get; set; }

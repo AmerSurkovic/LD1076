@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:RasporedIspitaPoSalama.SRSPS.Models"
     mc:Ignorable="d">
-  
+
     <Page.Resources>
         <DataTemplate x:Key="SalaListTemplate"  x:DataType="models:Sala">
             <Grid>
@@ -62,6 +62,6 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        
+
     </Grid>
 </Page>

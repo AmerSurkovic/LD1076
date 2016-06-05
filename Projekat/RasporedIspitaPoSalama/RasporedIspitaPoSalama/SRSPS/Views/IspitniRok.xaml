@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:RasporedIspitaPoSalama.SRSPS.Models"
     mc:Ignorable="d">
-   
+
 
     <Page.Resources>
         <DataTemplate x:Key="IspitListTemplate"  x:DataType="models:Ispit">
@@ -71,10 +71,10 @@
             </ListView>
         </Grid>
         <Grid>
-            <Button FontFamily="Segoe MDL2 Assets" Content="&#xE109;" HorizontalAlignment="Left" Margin="20,0,0,20" Command="{Binding dodaj_ispit}"/>
+            <Button Name="dodajIspit" FontFamily="Segoe MDL2 Assets" Content="&#xE109;" HorizontalAlignment="Left" Margin="20,0,0,20" Command="{Binding dodaj_ispit}"/>
             <Button Content="Natrag" HorizontalAlignment="Right" Margin="0,0,20,20" Command="{Binding idiNazad}"/>
         </Grid>
-                
+
     </StackPanel>
-    
+
 </Page>

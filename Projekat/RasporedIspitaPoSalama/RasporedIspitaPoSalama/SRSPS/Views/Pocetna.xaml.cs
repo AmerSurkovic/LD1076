@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -36,7 +37,6 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
             App.tbTrenutnaStranica = tBlockStranica;
             tBlockStranica.Text = "Ispitni rokovi";
            
-            tBoxSearch.FontStyle = Windows.UI.Text.FontStyle.Italic;
             glavniFrame.Navigate(typeof(ListIspitnihRokova), glavniFrame);
         }
 
@@ -45,27 +45,12 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
             splitViewPocetna.IsPaneOpen = !splitViewPocetna.IsPaneOpen;
         }
 
-        private void tbSearch_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if(tBoxSearch.Text.ToString().Equals("Search"))
-            {
-                tBoxSearch.Text = "";
-                tBoxSearch.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            }
-        }
-
-        private void tbSearch_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (String.IsNullOrWhiteSpace(tBoxSearch.Text.ToString()))
-            {
-                tBoxSearch.Text = "Search";
-                tBoxSearch.FontStyle = Windows.UI.Text.FontStyle.Italic;
-            }
-        }
+     
 
         private void listBoxMeni_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (App.admin)
+                buttonLogout.Visibility = Visibility.Visible;
             if (listBoxItem_Home.IsSelected)
             {
                 tBlockStranica.Text = "Ispitni Rokovi";
@@ -82,16 +67,22 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
             else if (listBoxItem_Admin.IsSelected)
             {
                 tBlockStranica.Text = "Admin Login";
-                glavniFrame.Navigate(typeof(Prijava_administratora));
+                glavniFrame.Navigate(typeof(Prijava_administratora), listBoxItem_Admin);
 
 
             }
             else if (listBoxItem_Vrijeme.IsSelected)
             {
                 tBlockStranica.Text = "Vremenska prognoza";
-               // glavniFrame.Navigate(typeof(VremenskaPrognoza), tBlockStranica);
+                 glavniFrame.Navigate(typeof(VremenskaPrognoza), tBlockStranica);
             }
-            
+            else if (listBoxItem_Help.IsSelected)
+            {
+                tBlockHelp.Text = "Pomoć";
+                glavniFrame.Navigate(typeof(Pomoc), tBlockStranica);
+            }
+
+
         }
 
         private void button_Back_Click(object sender, RoutedEventArgs e)
@@ -100,5 +91,17 @@ namespace RasporedIspitaPoSalama.SRSPS.Views
             
         }
 
+        private async void buttonLogout_Click(object sender, RoutedEventArgs e)
+        {
+            var d = new MessageDialog("Uspjesan log out.", "Log out");
+            await d.ShowAsync();
+            listBoxItem_Admin.Visibility = Visibility.Visible;
+            App.admin = false;
+            buttonLogout.Visibility = Visibility.Collapsed;
+            glavniFrame.Navigate(typeof(ListIspitnihRokova),glavniFrame);
+
+        }
+
+        
     }
 }

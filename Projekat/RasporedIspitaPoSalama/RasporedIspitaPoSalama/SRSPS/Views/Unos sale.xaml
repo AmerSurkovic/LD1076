@@ -10,10 +10,10 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="unosSale_label1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Unos sale" FontSize="24" VerticalAlignment="Top"/>
         <TextBlock x:Name="unosSale_label2" HorizontalAlignment="Left" Margin="44,58,0,0" TextWrapping="Wrap" Text="Naziv sale:" FontSize="18" VerticalAlignment="Top"/>
-        <TextBox x:Name="imeSale_textBox" HorizontalAlignment="Left" Margin="132,58,0,0" TextWrapping="Wrap" Text="{Binding Path=unos.naziv, Mode=TwoWay}" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="imeSale_textBox" HorizontalAlignment="Left" Margin="132,58,0,0" TextWrapping="Wrap" Text="{Binding Path=NazivSale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Top" Width="200"/>
         <TextBlock x:Name="unosSale_label3" HorizontalAlignment="Left" Margin="14,95,0,0" TextWrapping="Wrap" Text="Kapacitet sale:" FontSize="18:" VerticalAlignment="Top"/>
-        <TextBox x:Name="kapacitetSale_textBox" HorizontalAlignment="Left" Margin="132,95,0,0" TextWrapping="Wrap" Text="{Binding Path=unos.kapacitet, Mode=TwoWay}" Width="200" VerticalAlignment="Top"/>
-        <Button x:Name="crtanjeSale_button" FontFamily="Segoe MDL2 Assets" Content="&#59151;" HorizontalAlignment="Left" Margin="132,132,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="kapacitetSale_textBox" HorizontalAlignment="Left" Margin="132,95,0,0" TextWrapping="Wrap" Text="{Binding Path=KapacitetSale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Width="200" VerticalAlignment="Top"/>
+        <Button x:Name="crtanjeSale_button" FontFamily="Segoe MDL2 Assets" Content="&#59151;" HorizontalAlignment="Left" Margin="132,132,0,0" VerticalAlignment="Top" Width="200" d:IsHidden="True"/>
         <TextBlock x:Name="unosSale_label4" HorizontalAlignment="Left" Margin="84,132,0,0" TextWrapping="Wrap" Text="Paint:" VerticalAlignment="Top" FontSize="18"/>
         <Button x:Name="unesiSalu_button" Content="Unesi salu" HorizontalAlignment="Left" Margin="144,180,0,0" Command="{Binding Path=Dodaj}" VerticalAlignment="Top"/>
 

@@ -1,0 +1,55 @@
+﻿@model WebAplikacija.Models.Ispit
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Izbrisi ispit</h2>
+<style>
+    a.my-class {
+        color: #000000;
+    }
+
+        a.my-class:active {
+            color: #000000;
+        }
+
+        a.my-class:link {
+            color: #000000;
+        }
+
+        a.my-class:visited {
+            color: #000000;
+        }
+</style>
+<div>
+    <h4>Ispit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.brojPrijavljenih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brojPrijavljenih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.termin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.termin)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbrisi" class="btn btn-default" /> |
+            @Html.ActionLink("Povratak na listu", "Index", null, new { @class = "my-class" })
+        </div>
+    }
+</div>

@@ -17,13 +17,12 @@
             <Button Name="buttonHamburger" FontFamily="Segoe MDL2 Assets" FontSize="36" Content="&#xE700;" Click="buttonHamburger_Click" RelativePanel.AlignLeftWithPanel="True"/>
             <Button Name="button_Back" FontFamily="Segoe MDL2 Assets" FontSize="28" Content="&#xE0C4;" Click="button_Back_Click" Visibility="Collapsed" RelativePanel.RightOf="buttonHamburger"/>
             <TextBlock Name="tBlockStranica"  RelativePanel.AlignVerticalCenterWithPanel="True" Text="Pocetna" FontSize="20" Margin="20,5,0,0" RelativePanel.RightOf="button_Back" FontWeight="Bold"/>
-            <Button Name="buttonSearch"  RelativePanel.AlignVerticalCenterWithPanel="True" FontFamily="Segoe MDL2 Assets" FontSize="24" Content="&#xE11A;" RelativePanel.AlignRightWithPanel="True"/>
-            <TextBox Name="tBoxSearch" RelativePanel.AlignVerticalCenterWithPanel="True" Text="Search" Width="160" FontSize="20" GotFocus="tbSearch_GotFocus" LostFocus="tbSearch_LostFocus" RelativePanel.LeftOf="buttonSearch"/>
+            <Button Name="buttonLogout" Margin="0,0,10,0" Background="WhiteSmoke" RelativePanel.AlignVerticalCenterWithPanel="True" Content="Log Out" RelativePanel.AlignRightWithPanel="True" Click="buttonLogout_Click" Visibility="Collapsed"/>
         </RelativePanel>
 
         <SplitView Name="splitViewPocetna" Grid.Row="1" MinWidth="30" DisplayMode="CompactOverlay" OpenPaneLength="250" CompactPaneLength="56">
             <SplitView.Pane>
-                <ListBox Name="listBoxMeni" SelectionChanged="listBoxMeni_SelectionChanged">
+                <ListBox Name="listBoxMeni" SelectionChanged="listBoxMeni_SelectionChanged" >
                     <ListBoxItem Name="listBoxItem_Home">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Name="tBlockIkona1" FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
