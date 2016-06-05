@@ -50,19 +50,31 @@ Akteri datog sistema su:
 
 - Koristili smo SqlLite 7.0 LOCAL bazu za pohranjivanje naših podataka 
 
-- Korišten je RFID uređaj za prijavu administratora, kod se nalazi u klasi 'Prijava administratora.xaml.cs'
-  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/Rfid.cs
-  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/ViewModels/AdministratorViewModel.cs
-  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Views/Prijava%20administratora.xaml.cs
+- Korišten je RFID uređaj za prijavu administratora koristeći magnetne kartice
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/Rfid.cs
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/ViewModels/AdministratorViewModel.cs
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Views/Prijava%20administratora.xaml.cs
 
-- Validacija je ispoštovana kod CRUD operacija za ispite i sala
+- Validacija je ispoštovana kod CRUD operacija  za sale te prijave administratora
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/ViewModels/UnosSaleViewModel.cs
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/ViewModels/AdministratorViewModel.cs
 
 - Koristi se OpenWeatherMap eksterni servis,a klasa u kojoj se poziva api jeste 'VremenskaPrognozaProxy.cs'
-  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/VremenskaPrognozaProxy.cs
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/VremenskaPrognozaProxy.cs
 
 - Implementirano je korištenje GPS-a uređaja i to u klasi 'LocationManager.cs', te se prikaz teksta u view-u Help npr. 'wrap'-a kako bi se prilagodilo Windows Phone-u
-  https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/LocationManager.cs
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Helper/LocationManager.cs
   
 - WebServis se pruža za administratora i to mogućnost CRUD opercija za Sale, Predmete, Ispite. Nalazi se u posebnoj ASP.NET MVC aplikaciji 'WebAplikacija'
+- https://github.com/ooad-2015-2016/LD1076/tree/master/Projekat/WebAplikacija
+
+- <b>VIDEO ZA ASP.NET MVC PROJEKT</b> : https://www.youtube.com/watch?v=A8ySOEnNrCU
+- <b>VIDEO 1 ZA IGRICU</b> : https://www.youtube.com/watch?v=evUJT-B8LEQ
+- <b>VIDEO 2 ZA IGRICU</b> : https://www.youtube.com/watch?v=Nzyk8YWR5xM
+- <b>VIDEO ZA GLAVNU APLIKACIJU</b> : https://www.youtube.com/watch?v=JXrbY__4dQc
 
 - Help
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Projekat/RasporedIspitaPoSalama/RasporedIspitaPoSalama/SRSPS/Views/Pomoc.xaml
+
+- Igrica .exe fajl
+- https://github.com/ooad-2015-2016/LD1076/blob/master/Igrica/labirint_LD1076.exe
